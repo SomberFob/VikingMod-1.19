@@ -64,8 +64,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_SHIELD = ITEMS.register("viking_shield",
-            () -> new ShieldItem(
-                    new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
+            () -> new ShieldItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
 
 
     public static final RegistryObject<BowItem> LONGBOW = ITEMS.register("longbow",
