@@ -1,0 +1,9 @@
+
+{
+  "cave_drums": {
+    "subtitle": "sounds.vikingmod.cave_drums",
+    "sounds": [
+      "vikingmod:cave_drums"
+    ]
+  }
+}

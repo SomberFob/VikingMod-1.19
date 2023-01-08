@@ -1,0 +1,6 @@
+{
+  "parent": "vikingmod:item/longbow",
+  "textures": {
+    "layer0": "vikingmod:item/longbow_pulling_2"
+  }
+}

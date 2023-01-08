@@ -1,0 +1,42 @@
+{
+  "block.vikingmod.silver_block": "Block of Silver",
+  "block.vikingmod.silver_ore": "Silver Ore",
+  "block.vikingmod.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.vikingmod.slate_block": "Block of Slate",
+  "block.vikingmod.slate_ore": "Slate Ore",
+  "block.vikingmod.deepslate_slate_ore": "Deepslate Slate Ore",
+  "block.vikingmod.fishing_trap": "Fishing Trap",
+  "block.vikingmod.crate": "Crate",
+
+  "item.vikingmod.silver_helmet": "Silver Helmet",
+  "item.vikingmod.silver_chestplate": "Silver Chestplate",
+  "item.vikingmod.silver_leggings": "Silver Leggings",
+  "item.vikingmod.silver_boots": "Silver Boots",
+
+  "key.category.vikingmod.vikingmod": "Viking Mod",
+  "key.vikingmod.battle_charge": "Battle Charge",
+
+  "itemGroup.orestab": "Ores Tab",
+  "itemGroup.foodtab": "Food Tab",
+  "itemGroup.toolstab": "Tools Tab",
+  "itemGroup.blockstab": "Blocks Tab",
+  "itemGroup.armortab": "Amour Tab",
+  "itemGroup.miscellaneoustab": "Miscellaneous Tab",
+  "itemGroup.entitytab": "Entity Tab",
+
+  "item.vikingmod.chicken_leg": "Chicken Leg",
+  "item.vikingmod.silver_pickaxe": "Silver Pickaxe",
+  "item.vikingmod.silver_axe": "Silver Axe",
+  "item.vikingmod.silver_shovel": "Silver Shovel",
+  "item.vikingmod.silver_hoe": "Silver Hoe",
+  "item.vikingmod.silver_sword": "Silver Sword",
+  "item.vikingmod.longbow": "Longbow",
+  "item.vikingmod.slate": "Slate",
+  "item.vikingmod.raw_slate": "Raw Slate",
+  "item.vikingmod.viking_spawn_egg": "Viking Spawn Egg",
+  "item.vikingmod.dagger": "Silver Dagger",
+  "item.vikingmod.silver": "Silver",
+  "item.vikingmod.raw_silver": "Raw Silver",
+
+  "sounds.vikingmod.cave_drums": "Cave Drums Sound"
+}

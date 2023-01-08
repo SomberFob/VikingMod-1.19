@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "vikingmod:silver_ore",
+    "vikingmod:silver_block",
+    "vikingmod:deepslate_silver_ore"
+  ]
+}
