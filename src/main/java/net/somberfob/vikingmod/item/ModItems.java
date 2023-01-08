@@ -24,8 +24,11 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_SLATE = ITEMS.register("raw_slate",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ORES_TAB)));
 
-    public static final RegistryObject<Item> CHICKEN_LEG = ITEMS.register("chicken_leg",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Food_Tab).food(ModFoods.CHICKEN_LEG)));
+
+    public static final RegistryObject<Item> TROUT = ITEMS.register("trout",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Food_Tab).food(ModFoods.TROUT)));
+    public static final RegistryObject<Item> ROCK_BASS = ITEMS.register("rock_bass",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Food_Tab).food(ModFoods.ROCK_BASS)));
 
     public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword",
             () -> new SwordItem(ModTiers.SILVER, 3, 3f,
@@ -64,10 +67,6 @@ public class ModItems {
     public static final RegistryObject<BowItem> LONGBOW = ITEMS.register("longbow",
             () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).durability(500)));
 
-    public static final RegistryObject<ForgeSpawnEggItem> BEAR_SPAWN_EGG = ITEMS.register("bear_spawn_egg",
-            () -> new ForgeSpawnEggItem(ModEntityTypes.BEAR, 0xE1C16E, 0x655d5d,
-                                        new Item.Properties()
-                            .tab(ModCreativeModeTab.MISCELLANEOUS_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

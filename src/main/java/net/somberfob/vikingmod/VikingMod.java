@@ -14,8 +14,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.somberfob.vikingmod.block.ModBlocks;
 import net.somberfob.vikingmod.block.entities.ModBlockEntities;
 import net.somberfob.vikingmod.entity.ModEntityTypes;
-import net.somberfob.vikingmod.entity.client.bear.BearRenderer;
-import net.somberfob.vikingmod.entity.custom.BearEntity;
 import net.somberfob.vikingmod.item.ModItems;
 import net.somberfob.vikingmod.painting.ModPaintings;
 import net.somberfob.vikingmod.screen.ModMenuTypes;
@@ -65,7 +63,6 @@ public class VikingMod {
             MenuScreens.register(ModMenuTypes.FISHING_TRAP_MENU.get(), FishingTrapScreen::new);
             MenuScreens.register(ModMenuTypes.CRATE_MENU.get(), CrateScreen::new);
 
-            EntityRenderers.register(ModEntityTypes.BEAR.get(), BearRenderer::new);
         }
     }
 }

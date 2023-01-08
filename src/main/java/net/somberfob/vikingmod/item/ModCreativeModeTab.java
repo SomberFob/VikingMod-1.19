@@ -13,7 +13,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab Food_Tab = new CreativeModeTab("foodtab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.CHICKEN_LEG.get());
+            return new ItemStack(ModItems.TROUT.get());
         }
     };
     public static final CreativeModeTab TOOLS_TAB = new CreativeModeTab("toolstab") {
@@ -34,10 +34,5 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.SILVER_CHESTPLATE.get());
         }
     };
-    public static final CreativeModeTab MISCELLANEOUS_TAB = new CreativeModeTab("miscellaneoustab") {
-        @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(ModItems.BEAR_SPAWN_EGG.get());
-        }
-    };
+
 }

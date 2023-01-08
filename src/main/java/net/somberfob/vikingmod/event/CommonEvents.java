@@ -14,7 +14,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import net.somberfob.vikingmod.VikingMod;
 import net.somberfob.vikingmod.entity.ModEntityTypes;
-import net.somberfob.vikingmod.entity.custom.BearEntity;
 import net.somberfob.vikingmod.entity.custom.Viking;
 import net.somberfob.vikingmod.sounds.ModSounds;
 
@@ -55,9 +54,6 @@ public class CommonEvents {
 
     @Mod.EventBusSubscriber(modid = VikingMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ModEventBusEvents {
-        @SubscribeEvent
-        public static void entityAttributesEvent(EntityAttributeCreationEvent event) {
-            event.put(ModEntityTypes.BEAR.get(), BearEntity.setAttributes());
-        }
+
     }
 }
