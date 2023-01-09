@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "vikingmod:block/slate_block",
-    "top": "vikingmod:block/slate_block",
-    "side": "vikingmod:block/slate_block"
-  }
-}

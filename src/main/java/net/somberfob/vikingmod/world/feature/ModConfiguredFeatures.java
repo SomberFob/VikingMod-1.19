@@ -25,11 +25,6 @@ public class ModConfiguredFeatures {
     public static final RegistryObject<ConfiguredFeature<?, ?>> SILVER_ORE = CONFIGURED_FEATURES.register("silver_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_SILVER_ORES.get(), 7)));
 
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_SLATE_ORES = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.SLATE_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_SLATE_ORE.get().defaultBlockState())));
-    public static final RegistryObject<ConfiguredFeature<?, ?>> SLATE_ORE = CONFIGURED_FEATURES.register("slate_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_SLATE_ORES.get(), 10)));
 
 
     public static void register(IEventBus eventBus) {

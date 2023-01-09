@@ -25,7 +25,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab BLOCKS_TAB = new CreativeModeTab("blockstab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.SLATE.get());
+            return new ItemStack(ModItems.DAGGER.get());
         }
     };
     public static final CreativeModeTab ARMOR_TAB = new CreativeModeTab("armortab") {
