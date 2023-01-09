@@ -61,9 +61,6 @@ public class ModItems {
             () -> new ShieldItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
 
 
-    public static final RegistryObject<BowItem> LONGBOW = ITEMS.register("longbow",
-            () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).durability(500)));
-
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
