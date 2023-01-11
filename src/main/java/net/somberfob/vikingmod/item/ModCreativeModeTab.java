@@ -22,6 +22,12 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.SILVER_SWORD.get());
         }
     };
+    public static final CreativeModeTab BUILDING_BLOCKS = new CreativeModeTab("buildingblocks") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.SILVER_SHOVEL.get());
+        }
+    };
     public static final CreativeModeTab BLOCKS_TAB = new CreativeModeTab("blockstab") {
         @Override
         public ItemStack makeIcon() {

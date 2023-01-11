@@ -1,9 +1,12 @@
 {
   "block.vikingmod.silver_block": "Block of Silver",
+  "block.vikingmod.slate_block": "Block of Slate",
   "block.vikingmod.silver_ore": "Silver Ore",
   "block.vikingmod.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.vikingmod.fishing_trap": "Fishing Trap",
   "block.vikingmod.crate": "Crate",
+  "block.vikingmod.slate_slab": "Slate Slab",
+  "block.vikingmod.slate_stairs": "Slate Stairs",
 
   "item.vikingmod.silver_helmet": "Silver Helmet",
   "item.vikingmod.silver_chestplate": "Silver Chestplate",
@@ -14,6 +17,7 @@
   "key.vikingmod.battle_charge": "Battle Charge",
 
   "itemGroup.orestab": "Ores Tab",
+  "itemGroup.buildingblocks": "Building Blocks",
   "itemGroup.foodtab": "Food Tab",
   "itemGroup.toolstab": "Tools Tab",
   "itemGroup.blockstab": "Blocks Tab",

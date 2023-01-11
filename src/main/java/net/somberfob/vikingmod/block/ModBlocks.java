@@ -26,6 +26,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> SILVER_BLOCK = registerBlock("silver_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.ORES_TAB);
+
+    public static final RegistryObject<Block> SLATE_BLOCK = registerBlock("slate_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> SLATE_STAIRS = registerBlock("slate_stairs",
+            () -> new StairBlock(() -> ModBlocks.SLATE_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS);
+    public static final RegistryObject<Block> SLATE_SLAB = registerBlock("slate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
     public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
