@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "vikingmod:item/rim_texture",
 		"2": "vikingmod:item/centre_cube_texture",
-		"3": "vikingmod:item/handle_texture",
+		"3": "vikingmod:item/viking_handle_texture",
 		"4": "vikingmod:item/centre_texture",
 		"particle": "vikingmod:item/rim_texture"
 	},
