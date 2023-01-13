@@ -49,7 +49,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FISHING_TRAP = registerBlock("fishing_trap",
             () -> new FishingTrapBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(2f).noOcclusion()), ModCreativeModeTab.BLOCKS_TAB);
+                    .strength(2f).noOcclusion()), ModCreativeModeTab.PROPS);
 
     public static final RegistryObject<Block> CRATE = registerBlock("crate",
             () -> new CrateBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -57,7 +57,7 @@ public class ModBlocks {
                     .noOcclusion()),
             new Item.Properties()
                     .stacksTo(1)
-                    .tab(ModCreativeModeTab.BLOCKS_TAB));
+                    .tab(ModCreativeModeTab.PROPS));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
