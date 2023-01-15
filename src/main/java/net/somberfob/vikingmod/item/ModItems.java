@@ -9,6 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.somberfob.vikingmod.VikingMod;
 import net.somberfob.vikingmod.entity.ModEntityTypes;
+import net.somberfob.vikingmod.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -20,11 +21,15 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ORES_TAB)));
 
     public static final RegistryObject<Item> OLD_PILLOW = ITEMS.register("old_pillow",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS)));
+            () -> new OldPillowItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(3)));
     public static final RegistryObject<Item> SILVER_COINS = ITEMS.register("silver_coins",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS)));
+            () -> new SilverCoinsItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(64)));
     public static final RegistryObject<Item> NECKLACE = ITEMS.register("necklace",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS)));
+            () -> new NecklaceItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(4)));
+    public static final RegistryObject<Item> ROPE = ITEMS.register("rope",
+            () -> new RopeItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(5)));
+    public static final RegistryObject<Item> LUTE = ITEMS.register("lute",
+            () -> new LuteItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(1)));
 
     public static final RegistryObject<Item> TROUT = ITEMS.register("trout",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOOD_TAB).food(ModFoods.TROUT)));
