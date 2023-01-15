@@ -29,7 +29,7 @@ public class ModCreativeModeTab {
             return new ItemStack(ModBlocks.SLATE_BLOCK.get());
         }
     };
-    public static final CreativeModeTab BARTER_TAB = new CreativeModeTab("bartertab") {
+    public static final CreativeModeTab BARTER_AND_CRAFTING_ITEMS = new CreativeModeTab("barterandcraftingitems") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.SILVER_COINS.get());

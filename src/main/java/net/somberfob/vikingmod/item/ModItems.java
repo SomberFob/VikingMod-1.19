@@ -20,11 +20,11 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ORES_TAB)));
 
     public static final RegistryObject<Item> OLD_PILLOW = ITEMS.register("old_pillow",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS)));
     public static final RegistryObject<Item> SILVER_COINS = ITEMS.register("silver_coins",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS)));
     public static final RegistryObject<Item> NECKLACE = ITEMS.register("necklace",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS)));
 
     public static final RegistryObject<Item> TROUT = ITEMS.register("trout",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOOD_TAB).food(ModFoods.TROUT)));
