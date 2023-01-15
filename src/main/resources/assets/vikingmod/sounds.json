@@ -5,5 +5,11 @@
     "sounds": [
       "vikingmod:cave_drums"
     ]
+  },
+  "viking_charge": {
+    "subtitle": "sounds.vikingmod.viking_charge",
+    "sounds": [
+      "vikingmod:viking_charge"
+    ]
   }
 }

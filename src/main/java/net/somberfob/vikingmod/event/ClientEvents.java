@@ -13,6 +13,7 @@ import net.somberfob.vikingmod.VikingMod;
 import net.somberfob.vikingmod.entity.ModEntityTypes;
 import net.somberfob.vikingmod.renderer.VikingRenderer;
 import net.somberfob.vikingmod.renderer.models.VikingModel;
+import net.somberfob.vikingmod.sounds.ModSounds;
 import net.somberfob.vikingmod.util.KeyBinding;
 
 @Mod.EventBusSubscriber(modid = VikingMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

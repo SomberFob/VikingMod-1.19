@@ -19,10 +19,17 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_SILVER = ITEMS.register("raw_silver",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ORES_TAB)));
 
+    public static final RegistryObject<Item> OLD_PILLOW = ITEMS.register("old_pillow",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_TAB)));
+    public static final RegistryObject<Item> SILVER_COINS = ITEMS.register("silver_coins",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_TAB)));
+    public static final RegistryObject<Item> NECKLACE = ITEMS.register("necklace",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_TAB)));
+
     public static final RegistryObject<Item> TROUT = ITEMS.register("trout",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Food_Tab).food(ModFoods.TROUT)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOOD_TAB).food(ModFoods.TROUT)));
     public static final RegistryObject<Item> ROCK_BASS = ITEMS.register("rock_bass",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.Food_Tab).food(ModFoods.ROCK_BASS)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOOD_TAB).food(ModFoods.ROCK_BASS)));
 
     public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword",
             () -> new SwordItem(ModTiers.SILVER, 3, 3f,

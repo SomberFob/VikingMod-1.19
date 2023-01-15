@@ -11,7 +11,7 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.SILVER.get());
         }
     };
-    public static final CreativeModeTab Food_Tab = new CreativeModeTab("foodtab") {
+    public static final CreativeModeTab FOOD_TAB = new CreativeModeTab("foodtab") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.TROUT.get());
@@ -27,6 +27,12 @@ public class ModCreativeModeTab {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModBlocks.SLATE_BLOCK.get());
+        }
+    };
+    public static final CreativeModeTab BARTER_TAB = new CreativeModeTab("bartertab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.SILVER_COINS.get());
         }
     };
     public static final CreativeModeTab PROPS = new CreativeModeTab("props") {
