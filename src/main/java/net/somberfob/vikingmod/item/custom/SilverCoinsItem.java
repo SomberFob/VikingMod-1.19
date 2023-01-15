@@ -29,7 +29,7 @@ public class SilverCoinsItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
         if(Screen.hasShiftDown()) {
-            components.add(Component.literal("Silver, wow I can buy stuff with this!").withStyle(ChatFormatting.WHITE));
+            components.add(Component.literal("Silver, wow I can buy stuff with this!").withStyle(ChatFormatting.GRAY));
         } else {
             components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.YELLOW));
         }
