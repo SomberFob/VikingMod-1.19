@@ -1,6 +1,7 @@
 package net.somberfob.vikingmod.item;
 
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -65,12 +66,22 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
 
     public static final RegistryObject<Item> DAGGER = ITEMS.register("dagger",
-            () -> new SwordItem(Tiers.IRON, 1, 5f,
+            () -> new SwordItem(Tiers.GOLD, 1, 2f,
+                    new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> SWORD = ITEMS.register("sword",
+            () -> new SwordItem(Tiers.GOLD, 5, 4f,
+                    new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
+
+    public static final RegistryObject<Item> VIKING_SPEAR = ITEMS.register("viking_spear",
+            () -> new SwordItem(Tiers.GOLD, 6, 2f,
+                    new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
+
+    public static final RegistryObject<Item> VIKING_AXE = ITEMS.register("viking_axe",
+            () -> new SwordItem(Tiers.GOLD, 6, 4f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_SHIELD = ITEMS.register("viking_shield",
             () -> new ShieldItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
-
     public static final RegistryObject<Item> SAXON_SHIELD = ITEMS.register("saxon_shield",
             () -> new ShieldItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
 
