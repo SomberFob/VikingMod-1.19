@@ -65,9 +65,7 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.SILVER, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
 
-    public static final RegistryObject<Item> DAGGER = ITEMS.register("dagger",
-            () -> new SwordItem(Tiers.GOLD, 1, 2f,
-                    new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
+
     public static final RegistryObject<Item> SWORD = ITEMS.register("sword",
             () -> new SwordItem(Tiers.GOLD, 5, 4f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));

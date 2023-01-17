@@ -1,7 +1,6 @@
 {
   "variants": {
     "": {
-      "model": "vikingmod:block/slate_block"
-    }
+      "model": "vikingmod:block/slate_block"}
   }
 }

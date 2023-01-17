@@ -1,5 +1,6 @@
 {
   "block.vikingmod.silver_block": "Block of Silver",
+  "block.vikingmod.stone_bricks_fancy_0": "Stone Bricks Fancy 0",
   "block.vikingmod.slate_block": "Block of Slate",
   "block.vikingmod.silver_ore": "Silver Ore",
   "block.vikingmod.deepslate_silver_ore": "Deepslate Silver Ore",
@@ -40,8 +41,7 @@
   "item.vikingmod.silver_sword": "Silver Sword",
   "item.vikingmod.raw_slate": "Raw Slate",
   "item.vikingmod.viking_spawn_egg": "Viking Spawn Egg",
-  "item.vikingmod.dagger": "Silver Dagger",
-  "item.vikingmod.sword": "Viking Sword",
+    "item.vikingmod.sword": "Viking Sword",
   "item.vikingmod.viking_spear": "Viking Spear",
   "item.vikingmod.viking_shield": "Viking Shield",
   "item.vikingmod.viking_axe": "Viking Axe",
