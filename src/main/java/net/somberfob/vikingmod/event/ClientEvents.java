@@ -2,17 +2,18 @@ package net.somberfob.vikingmod.event;
 
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.EntityModel;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
+import net.minecraftforge.client.event.RenderLivingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.somberfob.vikingmod.VikingMod;
-import net.somberfob.vikingmod.entity.ModEntityTypes;
-import net.somberfob.vikingmod.renderer.VikingRenderer;
-import net.somberfob.vikingmod.renderer.models.VikingModel;
+import net.somberfob.vikingmod.client.gui.HealthBarGui;
 import net.somberfob.vikingmod.sounds.ModSounds;
 import net.somberfob.vikingmod.util.KeyBinding;
 
@@ -26,6 +27,11 @@ public class ClientEvents {
                 Minecraft.getInstance().player.playSound(SoundEvents.PILLAGER_CELEBRATE);
             }
         }
+
+        @SubscribeEvent
+        public static void onRenderLiving(RenderLivingEvent.Post<? extends LivingEntity, ? extends EntityModel<?>> event) {
+            HealthBarGui.render(event);
+        }
     }
 
     @Mod.EventBusSubscriber(modid = VikingMod.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -36,8 +42,4 @@ public class ClientEvents {
         }
     }
 
-    @SubscribeEvent
-    public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-        event.registerLayerDefinition(VikingModel.LAYER_LOCATION, VikingModel::createBodyLayer);
-    }
 }

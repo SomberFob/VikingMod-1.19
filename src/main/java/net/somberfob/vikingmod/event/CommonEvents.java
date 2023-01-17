@@ -13,8 +13,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import net.somberfob.vikingmod.VikingMod;
-import net.somberfob.vikingmod.entity.ModEntityTypes;
-import net.somberfob.vikingmod.entity.custom.Viking;
 import net.somberfob.vikingmod.sounds.ModSounds;
 
 

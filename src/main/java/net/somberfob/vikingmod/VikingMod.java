@@ -13,7 +13,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.somberfob.vikingmod.block.ModBlocks;
 import net.somberfob.vikingmod.block.entities.ModBlockEntities;
-import net.somberfob.vikingmod.entity.ModEntityTypes;
 import net.somberfob.vikingmod.item.ModItems;
 import net.somberfob.vikingmod.painting.ModPaintings;
 import net.somberfob.vikingmod.screen.ModMenuTypes;
@@ -23,7 +22,6 @@ import net.somberfob.vikingmod.sounds.ModSounds;
 import net.somberfob.vikingmod.world.feature.ModConfiguredFeatures;
 import net.somberfob.vikingmod.world.feature.ModPlacedFeatures;
 import org.slf4j.Logger;
-import software.bernie.geckolib3.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(VikingMod.MOD_ID)
@@ -36,7 +34,6 @@ public class VikingMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModEntityTypes.register(modEventBus);
         ModSounds.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
@@ -45,7 +42,6 @@ public class VikingMod {
         ModPlacedFeatures.register(modEventBus);
         ModPaintings.register(modEventBus);
 
-        GeckoLib.initialize();
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);

@@ -8,7 +8,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.somberfob.vikingmod.VikingMod;
-import net.somberfob.vikingmod.entity.ModEntityTypes;
 import net.somberfob.vikingmod.item.custom.*;
 
 public class ModItems {
