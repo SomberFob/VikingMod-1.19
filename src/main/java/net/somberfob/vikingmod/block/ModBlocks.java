@@ -14,6 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.somberfob.vikingmod.VikingMod;
 import net.somberfob.vikingmod.block.custom.CrateBlock;
 import net.somberfob.vikingmod.block.custom.FishingTrapBlock;
+import net.somberfob.vikingmod.block.custom.StoneArchBlock;
 import net.somberfob.vikingmod.item.ModCreativeModeTab;
 import net.somberfob.vikingmod.item.ModItems;
 
@@ -26,6 +27,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SILVER_BLOCK = registerBlock("silver_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.ORES_TAB);
+
 
     public static final RegistryObject<Block> STONE_BRICKS_FANCY_0 = registerBlock("stone_bricks_fancy_0",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
@@ -54,6 +56,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> FISHING_TRAP = registerBlock("fishing_trap",
             () -> new FishingTrapBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(2f).noOcclusion()), ModCreativeModeTab.PROPS);
+
+    public static final RegistryObject<Block> STONE_ARCH = registerBlock("stone_arch",
+            () -> new StoneArchBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.PROPS);
+
 
     public static final RegistryObject<Block> CRATE = registerBlock("crate",
             () -> new CrateBlock(BlockBehaviour.Properties.of(Material.WOOD)

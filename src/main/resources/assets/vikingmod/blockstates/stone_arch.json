@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "vikingmod:block/stone_arch"
+    },
+    "facing=south": {
+      "model": "vikingmod:block/stone_arch",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vikingmod:block/stone_arch",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "vikingmod:block/stone_arch",
+      "y": 90
+    }
+  }
+}

@@ -37,19 +37,19 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOOD_TAB).food(ModFoods.ROCK_BASS)));
 
     public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword",
-            () -> new SwordItem(ModTiers.SILVER, 3, 3f,
+            () -> new SwordItem(ModToolTiers.SILVER, 3, 3f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB)));
     public static final RegistryObject<Item> SILVER_PICKAXE = ITEMS.register("silver_pickaxe",
-            () -> new PickaxeItem(ModTiers.SILVER, 1, 1f,
+            () -> new PickaxeItem(ModToolTiers.SILVER, 1, 1f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB)));
     public static final RegistryObject<Item> SILVER_SHOVEL = ITEMS.register("silver_shovel",
-            () -> new ShovelItem(ModTiers.SILVER, 0, 1f,
+            () -> new ShovelItem(ModToolTiers.SILVER, 0, 1f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB)));
     public static final RegistryObject<Item> SILVER_AXE = ITEMS.register("silver_axe",
-            () -> new AxeItem(ModTiers.SILVER, 4, 0f,
+            () -> new AxeItem(ModToolTiers.SILVER, 4, 0f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB)));
     public static final RegistryObject<Item> SILVER_HOE = ITEMS.register("silver_hoe",
-            () -> new HoeItem(ModTiers.SILVER, 0, 0f,
+            () -> new HoeItem(ModToolTiers.SILVER, 0, 0f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB)));
 
     public static final RegistryObject<Item> SILVER_HELMET = ITEMS.register("silver_helmet",
@@ -79,7 +79,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_HAMMER = ITEMS.register("viking_hammer",
-            () -> new SwordItem(Tiers.GOLD, 7, 3f,
+            () -> new SwordItem(Tiers.GOLD, 7, 5f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_SHIELD = ITEMS.register("viking_shield",
