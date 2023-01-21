@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "vikingmod:rope",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vikingmod:necklace",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vikingmod:lute",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vikingmod:old_pillow",
+          "weight": 15
+        }
+      ]
+    }
+    ]
+}
+    

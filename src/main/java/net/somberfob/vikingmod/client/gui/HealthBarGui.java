@@ -85,7 +85,7 @@ public class HealthBarGui {
         GuiComponent.blit(poseStack,
                           X_POS, Y_POS,
                           getScaledProgress((int) entity.getHealth(), (int) entity.getMaxHealth(), HEALTBAR_WIDTH), HEALTBAR_HEIGHT,
-                          0, HEALTBAR_HEIGHT + 1,
+                          0, HEALTBAR_HEIGHT + 0,
                           HEALTBAR_WIDTH, HEALTBAR_HEIGHT,
                           126, 56);
     }
