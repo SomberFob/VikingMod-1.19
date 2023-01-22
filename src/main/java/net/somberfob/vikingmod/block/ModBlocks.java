@@ -33,6 +33,27 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
 
+    public static final RegistryObject<Block> STONE_BRICKS_FANCY_1 = registerBlock("stone_bricks_fancy_1",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> STONE_FANCY_0 = registerBlock("stone_fancy_0",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+    public static final RegistryObject<Block> STONE_FANCY_1 = registerBlock("stone_fancy_1",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+    public static final RegistryObject<Block> STONE_FANCY_2 = registerBlock("stone_fancy_2",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+    public static final RegistryObject<Block> STONE_FANCY_3 = registerBlock("stone_fancy_3",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+    public static final RegistryObject<Block> STONE_FANCY_4 = registerBlock("stone_fancy_4",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+
+
     public static final RegistryObject<Block> SLATE_BLOCK = registerBlock("slate_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
