@@ -30,6 +30,8 @@ public class ModItems {
             () -> new RopeItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(5)));
     public static final RegistryObject<Item> SCROLL = ITEMS.register("scroll",
             () -> new ScrollItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(1)));
+    public static final RegistryObject<Item> BROCHE = ITEMS.register("broche",
+            () -> new BrocheItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(1)));
     public static final RegistryObject<Item> LUTE = ITEMS.register("lute",
             () -> new LuteItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(1)));
 
