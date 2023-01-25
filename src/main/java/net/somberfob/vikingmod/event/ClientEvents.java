@@ -1,6 +1,5 @@
 package net.somberfob.vikingmod.event;
 
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.sounds.SoundEvents;
@@ -14,7 +13,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.somberfob.vikingmod.VikingMod;
 import net.somberfob.vikingmod.client.gui.HealthBarGui;
-import net.somberfob.vikingmod.sounds.ModSounds;
+import net.somberfob.vikingmod.entities.ModEntityType;
+import net.somberfob.vikingmod.item.custom.renderer.ThrownVikingAxeRenderer;
+import net.somberfob.vikingmod.item.custom.renderer.ThrownVikingSpearRenderer;
 import net.somberfob.vikingmod.util.KeyBinding;
 
 @Mod.EventBusSubscriber(modid = VikingMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -40,6 +41,11 @@ public class ClientEvents {
         public static void onKeyRegister(RegisterKeyMappingsEvent event) {
             event.register(KeyBinding.SHOUTING_KEY);
         }
-    }
 
+        @SubscribeEvent
+        public static void onRegisterRenderer(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerEntityRenderer(ModEntityType.VIKING_AXE.get(), ThrownVikingAxeRenderer::new);
+            event.registerEntityRenderer(ModEntityType.VIKING_SPEAR.get(), ThrownVikingSpearRenderer::new);
+        }
+    }
 }

@@ -1,9 +1,7 @@
 package net.somberfob.vikingmod.item;
 
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.*;
-import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -75,12 +73,12 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_SPEAR = ITEMS.register("viking_spear",
-            () -> new SwordItem(Tiers.GOLD, 6, 2f,
-                    new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
+                                                                           () -> new VikingSpearItem(Tiers.GOLD, 6, 2f,
+                                                                                                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_AXE = ITEMS.register("viking_axe",
-            () -> new SwordItem(Tiers.GOLD, 6, 4f,
-                    new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
+                                                                         () -> new VikingAxeItem(Tiers.GOLD, 6, 4f,
+                                                                                                 new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_HAMMER = ITEMS.register("viking_hammer",
             () -> new SwordItem(Tiers.GOLD, 7, 5f,
