@@ -11,5 +11,23 @@
     "sounds": [
       "vikingmod:viking_charge"
     ]
+  },
+  "axe_throw": {
+    "subtitle": "sounds.vikingmod.axe_throw",
+    "sounds": [
+      "vikingmod:axe_throw"
+    ]
+  },
+  "axe_pickup": {
+    "subtitle": "sounds.vikingmod.axe_pickup",
+    "sounds": [
+      "vikingmod:axe_pickup"
+    ]
+  },
+  "axe_select": {
+    "subtitle": "sounds.vikingmod.axe_select",
+    "sounds": [
+      "vikingmod:axe_select"
+    ]
   }
 }
