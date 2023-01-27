@@ -2,6 +2,7 @@ package net.somberfob.vikingmod.item.custom.thrown;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -122,9 +123,14 @@ public abstract class AbstractThrowableWeapon extends AbstractArrow {
         }
     }
 
+    @Override
+    public void setSoundEvent(@NotNull SoundEvent pSoundEvent) {
+        // Disables the default arrow hit ground sound
+    }
+
     @Nullable
     protected SoundEvent getDefaultPickupSound() {
-        return null;
+        return SoundEvents.ITEM_PICKUP;
     }
 
     @Nullable

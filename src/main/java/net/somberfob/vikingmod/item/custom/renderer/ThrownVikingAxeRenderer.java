@@ -44,6 +44,7 @@ public class ThrownVikingAxeRenderer extends EntityRenderer<ThrownVikingAxe> {
         super.render(pEntity, pEntityYaw, pPartialTick, pPoseStack, pBuffer, pPackedLight);
     }
 
+
     @Override
     public @NotNull ResourceLocation getTextureLocation(@NotNull ThrownVikingAxe pEntity) {
         return VIKING_AXE;
