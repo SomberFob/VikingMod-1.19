@@ -2,6 +2,7 @@ package net.somberfob.vikingmod.item.custom;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -9,10 +10,14 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
-import net.somberfob.vikingmod.item.custom.Thrown.ThrownVikingAxe;
+import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
+import net.somberfob.vikingmod.item.custom.thrown.ThrownVikingAxe;
+import net.somberfob.vikingmod.sounds.ModSounds;
 import org.jetbrains.annotations.NotNull;
 
+
 public class VikingAxeItem extends SwordItem {
+
     public VikingAxeItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
@@ -38,6 +43,7 @@ public class VikingAxeItem extends SwordItem {
             player.getInventory().removeItem(pStack);
         }
     }
+
 
     @Override
     public @NotNull UseAnim getUseAnimation(@NotNull ItemStack pStack) {

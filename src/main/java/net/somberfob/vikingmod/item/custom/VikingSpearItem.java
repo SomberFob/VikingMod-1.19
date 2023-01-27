@@ -9,8 +9,7 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
-import net.somberfob.vikingmod.item.custom.Thrown.ThrownVikingAxe;
-import net.somberfob.vikingmod.item.custom.Thrown.ThrownVikingSpear;
+import net.somberfob.vikingmod.item.custom.thrown.ThrownVikingSpear;
 import org.jetbrains.annotations.NotNull;
 
 public class VikingSpearItem extends SwordItem {
@@ -40,6 +39,8 @@ public class VikingSpearItem extends SwordItem {
             player.getInventory().removeItem(pStack);
         }
     }
+
+
 
     @Override
     public @NotNull UseAnim getUseAnimation(@NotNull ItemStack pStack) {

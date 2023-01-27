@@ -1,4 +1,4 @@
-package net.somberfob.vikingmod.item.custom.Thrown;
+package net.somberfob.vikingmod.item.custom.thrown;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;

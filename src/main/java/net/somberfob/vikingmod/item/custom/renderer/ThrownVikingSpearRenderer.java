@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.somberfob.vikingmod.VikingMod;
-import net.somberfob.vikingmod.item.custom.Thrown.ThrownVikingSpear;
+import net.somberfob.vikingmod.item.custom.thrown.ThrownVikingSpear;
 import org.jetbrains.annotations.NotNull;
 
 public class ThrownVikingSpearRenderer extends EntityRenderer<ThrownVikingSpear> {
