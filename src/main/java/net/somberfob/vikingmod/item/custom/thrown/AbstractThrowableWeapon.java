@@ -4,6 +4,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -35,7 +36,6 @@ public abstract class AbstractThrowableWeapon extends AbstractArrow {
     public AbstractThrowableWeapon(EntityType<? extends AbstractThrowableWeapon> pEntityType, LivingEntity pShooter, Level pLevel, ItemStack weapon) {
         super(pEntityType, pShooter, pLevel);
         this.weapon = weapon;
-        this.shooter = pShooter;
     }
 
     @Override
@@ -105,6 +105,11 @@ public abstract class AbstractThrowableWeapon extends AbstractArrow {
     }
 
     @Override
+    public void tick() {
+        super.tick();
+    }
+
+    @Override
     public void shoot(double pX, double pY, double pZ, float pVelocity, float pInaccuracy) {
         super.shoot(pX, pY, pZ, pVelocity, pInaccuracy);
         this.customPlaySound(this.getDefaultThrowingSound());
@@ -141,6 +146,10 @@ public abstract class AbstractThrowableWeapon extends AbstractArrow {
     @Override
     protected @NotNull SoundEvent getDefaultHitGroundSoundEvent() {
         return ModSounds.NULL.get();
+    }
+
+    public Entity getShooter() {
+        return getOwner();
     }
 
     @Override

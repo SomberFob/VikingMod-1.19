@@ -8,13 +8,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.somberfob.vikingmod.entities.ModEntityType;
 import net.somberfob.vikingmod.item.ModItems;
-import net.somberfob.vikingmod.item.custom.thrown.AbstractThrowableWeapon;
 import net.somberfob.vikingmod.sounds.ModSounds;
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class ThrownVikingAxe extends AbstractThrowableWeapon {
-    public float rotationYP = -45;
+    private float rotationYP = -45;
 
     public ThrownVikingAxe(EntityType<? extends AbstractThrowableWeapon> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
@@ -37,6 +35,15 @@ public class ThrownVikingAxe extends AbstractThrowableWeapon {
             return;
         }
         this.rotationYP -= 15;
+    }
+
+    @Override
+    protected boolean canDestroyGlass() {
+        return false;
+    }
+
+    public float getRotationYP() {
+        return this.rotationYP;
     }
 
     @Override

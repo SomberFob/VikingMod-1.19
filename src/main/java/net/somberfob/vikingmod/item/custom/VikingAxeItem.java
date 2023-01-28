@@ -38,7 +38,9 @@ public class VikingAxeItem extends SwordItem {
 
         if (remainingTime >= 10 && !pLevel.isClientSide) {
             ThrownVikingAxe thrownVikingAxe = new ThrownVikingAxe(player, pLevel, pStack);
-            thrownVikingAxe.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
+            //thrownVikingAxe.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
+            //thrownVikingAxe.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 2.5F, 1.0F);
+            thrownVikingAxe.shoot(player.getLookAngle().x, player.getLookAngle().y, player.getLookAngle().z, 1.5F, 1.0F);
             pLevel.addFreshEntity(thrownVikingAxe);
             player.getInventory().removeItem(pStack);
         }
