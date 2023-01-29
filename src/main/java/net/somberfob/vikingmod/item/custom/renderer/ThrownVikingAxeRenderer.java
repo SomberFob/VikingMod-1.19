@@ -34,6 +34,7 @@ public class ThrownVikingAxeRenderer extends EntityRenderer<ThrownVikingAxe> {
     public void render(ThrownVikingAxe pEntity, float pEntityYaw, float pPartialTick, PoseStack pPoseStack, @NotNull MultiBufferSource pBuffer, int pPackedLight) {
         pPoseStack.pushPose();
 
+        pPoseStack.translate(0, 0.2, 0);
         pPoseStack.mulPose(Vector3f.YP.rotationDegrees(Mth.lerp(pPartialTick, pEntity.yRotO, pEntity.getYRot()) - 180.0F));
         pPoseStack.mulPose(Vector3f.ZP.rotationDegrees(Mth.lerp(pPartialTick, pEntity.xRotO, pEntity.getXRot()) + 270.0F));
         pPoseStack.mulPose(Vector3f.YP.rotationDegrees(pEntity.getRotationYP()));

@@ -40,7 +40,8 @@ public class HealthBarGui {
     public static void renderHealthbar(PoseStack poseStack, LivingEntity entity, Quaternion cameraOrientation, float cameraHeight) {
         boolean isFriendly = entity.getClassification(false).isFriendly();
 
-        RenderSystem.disableDepthTest();
+
+        RenderSystem.enableDepthTest();
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         RenderSystem.setShaderTexture(0, new ResourceLocation(VikingMod.MOD_ID, HEALTH.getPath()));
@@ -61,6 +62,8 @@ public class HealthBarGui {
         }
 
 
+
+        RenderSystem.disableDepthTest();
         poseStack.popPose();
     }
 
