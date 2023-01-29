@@ -41,7 +41,6 @@ public class VikingMod {
         ModPlacedFeatures.register(modEventBus);
         ModPaintings.register(modEventBus);
 
-
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }
