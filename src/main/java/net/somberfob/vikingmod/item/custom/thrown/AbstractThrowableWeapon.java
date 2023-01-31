@@ -1,6 +1,9 @@
 package net.somberfob.vikingmod.item.custom.thrown;
 
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
@@ -14,6 +17,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
@@ -159,13 +163,13 @@ public abstract class AbstractThrowableWeapon extends AbstractArrow {
             this.weapon = ItemStack.of(pCompound.getCompound("Weapon"));
         }
 
-        this.isStuckInBlock = pCompound.getBoolean("ObjectGotHit");
+        this.isStuckInBlock = pCompound.getBoolean("IsStuckInBlock");
     }
 
     @Override
     public void addAdditionalSaveData(@NotNull CompoundTag pCompound) {
         super.addAdditionalSaveData(pCompound);
         pCompound.put("Weapon", this.weapon.save(new CompoundTag()));
-        pCompound.putBoolean("ObjectGotHit", this.isStuckInBlock);
+        pCompound.putBoolean("IsStuckInBlock", this.isStuckInBlock);
     }
 }

@@ -1,5 +1,8 @@
 package net.somberfob.vikingmod.item.custom.thrown;
 
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.EntityDimensions;
@@ -45,6 +48,7 @@ public class ThrownVikingAxe extends AbstractThrowableWeapon {
         this.rotationYP -= 15;
     }
 
+
     @Override
     protected boolean canDestroyGlass() {
         return true;
@@ -52,6 +56,14 @@ public class ThrownVikingAxe extends AbstractThrowableWeapon {
 
     public float getRotationYP() {
         return this.rotationYP;
+    }
+
+    private static final EntityDataAccessor<Boolean> OBJECT_GOT_HIT = SynchedEntityData.defineId(ThrownVikingAxe.class, EntityDataSerializers.BOOLEAN);
+
+    @Override
+    protected void defineSynchedData() {
+        super.defineSynchedData();
+        entityData.define(OBJECT_GOT_HIT, this.isStuckInBlock);
     }
 
     @Override

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "vikingmod:silver_block"
+  },
+  "base": {
+    "item": "vikingmod:silver_axe"
+  },
+  "result": {
+    "item": "vikingmod:viking_axe"
+  }
+}

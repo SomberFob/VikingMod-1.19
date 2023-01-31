@@ -70,7 +70,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
 
 
-    public static final RegistryObject<Item> SWORD = ITEMS.register("sword",
+    public static final RegistryObject<Item> SWORD = ITEMS.register("viking_sword",
             () -> new SwordItem(Tiers.GOLD, 5, 4f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 

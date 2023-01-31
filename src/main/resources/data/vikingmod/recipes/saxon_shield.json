@@ -13,10 +13,10 @@
   },
   "pattern": [
     "IWI",
-    "WOW",
+    "IOI",
     "IWI"
   ],
   "result": {
-    "item": "vikingmod:viking_shield"
+    "item": "vikingmod:saxon_shield"
   }
 }

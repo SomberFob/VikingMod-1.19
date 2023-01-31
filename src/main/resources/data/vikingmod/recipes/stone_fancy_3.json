@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vikingmod:stone_fancy_2"
+    }
+  ],
+  "result": {
+    "item": "vikingmod:stone_fancy_3"
+  }
+}

@@ -9,17 +9,10 @@ import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.client.event.RenderLivingEvent;
-import net.minecraftforge.common.Tags;
 import net.somberfob.vikingmod.VikingMod;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class HealthBarGui {
     private static final Minecraft CLIENT = Minecraft.getInstance();
@@ -68,12 +61,17 @@ public class HealthBarGui {
     }
 
     public static boolean canRender(LivingEntity entity) {
-        return entitiyIsInDistance(entity) &&
+        return entityIsInDistance(entity) &&
                 !playerIsBlind() &&
+                !entityIsBeingRidden(entity) &&
                 entity != PLAYER;
     }
 
-    public static boolean entitiyIsInDistance(LivingEntity entity) {
+    public static boolean entityIsBeingRidden(LivingEntity entity) {
+        return !entity.getPassengers().isEmpty();
+    }
+
+    public static boolean entityIsInDistance(LivingEntity entity) {
         double viewDistance = CLIENT.options.getEffectiveRenderDistance();
         return PLAYER != null && PLAYER.getBoundingBox().inflate(viewDistance).intersects(entity.getBoundingBox());
     }

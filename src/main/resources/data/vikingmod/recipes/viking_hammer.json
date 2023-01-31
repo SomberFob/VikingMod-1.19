@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "vikingmod:silver"
+    },
+    "B": {
+      "item": "vikingmod:silver_block"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "XXB",
+    " SB",
+    " S "
+  ],
+  "result": {
+    "item": "vikingmod:viking_hammer"
+  }
+}

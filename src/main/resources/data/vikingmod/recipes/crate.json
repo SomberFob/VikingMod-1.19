@@ -1,0 +1,27 @@
+{
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "C": {
+      "item": "minecraft:ender_chest"
+    }
+  },
+
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SPS",
+    "PEP",
+    "SCS"
+  ],
+
+  "result": {
+    "item": "vikingmod:crate"
+  }
+}
