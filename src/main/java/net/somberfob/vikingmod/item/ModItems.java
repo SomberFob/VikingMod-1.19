@@ -40,6 +40,9 @@ public class ModItems {
     public static final RegistryObject<Item> RASPBERRYS = ITEMS.register("raspberrys",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOOD_TAB).food(ModFoods.RASPBERRYS)));
 
+    public static final RegistryObject<Item> OIL_JAR = ITEMS.register("oil_jar",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS)));
+
     public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword",
             () -> new SwordItem(ModToolTiers.SILVER, 3, 3f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB)));
