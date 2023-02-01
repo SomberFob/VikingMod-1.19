@@ -45,12 +45,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> STONE_FANCY_2 = registerBlock("stone_fancy_2",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
-    public static final RegistryObject<Block> STONE_FANCY_3 = registerBlock("stone_fancy_3",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
-    public static final RegistryObject<Block> STONE_FANCY_4 = registerBlock("stone_fancy_4",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
 
 
     public static final RegistryObject<Block> SLATE_BLOCK = registerBlock("slate_block",
