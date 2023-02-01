@@ -2,6 +2,7 @@ package net.somberfob.vikingmod.event;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraftforge.api.distmarker.Dist;
@@ -46,6 +47,7 @@ public class ClientEvents {
         public static void onRegisterRenderer(EntityRenderersEvent.RegisterRenderers event) {
             event.registerEntityRenderer(ModEntityType.VIKING_AXE.get(), ThrownVikingAxeRenderer::new);
             event.registerEntityRenderer(ModEntityType.VIKING_SPEAR.get(), ThrownVikingSpearRenderer::new);
+            event.registerEntityRenderer(ModEntityType.OIL_JAR.get(), ThrownItemRenderer::new);
         }
     }
 }

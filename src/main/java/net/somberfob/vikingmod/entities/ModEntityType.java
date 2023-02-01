@@ -8,12 +8,19 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.somberfob.vikingmod.VikingMod;
+import net.somberfob.vikingmod.item.custom.OilJarItem;
+import net.somberfob.vikingmod.item.custom.thrown.ThrownOilJar;
 import net.somberfob.vikingmod.item.custom.thrown.ThrownVikingAxe;
 import net.somberfob.vikingmod.item.custom.thrown.ThrownVikingSpear;
 
 public class ModEntityType {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, VikingMod.MOD_ID);
+
+    public static final RegistryObject<EntityType<ThrownOilJar>> OIL_JAR =
+            ENTITY_TYPES.register("oil_jar",
+                                  () -> EntityType.Builder.of((EntityType.EntityFactory<ThrownOilJar>) ThrownOilJar::new, MobCategory.MISC)
+                                          .build("oil_jar"));
 
     public static final RegistryObject<EntityType<ThrownVikingAxe>> VIKING_AXE =
             ENTITY_TYPES.register("viking_axe",
