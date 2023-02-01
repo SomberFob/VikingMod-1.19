@@ -1,5 +1,6 @@
 package net.somberfob.vikingmod.item.custom.thrown;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -27,6 +28,8 @@ import net.somberfob.vikingmod.sounds.ModSounds;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
+
 public abstract class AbstractThrowableWeapon extends AbstractArrow {
     protected ItemStack weapon = new ItemStack(this.getDefaultItem());
     protected LivingEntity shooter;
@@ -41,6 +44,8 @@ public abstract class AbstractThrowableWeapon extends AbstractArrow {
         super(pEntityType, pShooter, pLevel);
         this.weapon = weapon;
     }
+
+
 
     @Override
     protected void onHitEntity(EntityHitResult pResult) {
@@ -65,7 +70,12 @@ public abstract class AbstractThrowableWeapon extends AbstractArrow {
 
     protected float getAttackDamage(EntityHitResult pResult) {
         float attackDamage = ((SwordItem) this.weapon.getItem()).getDamage();
-        attackDamage += EnchantmentHelper.getDamageBonus(this.weapon, ((LivingEntity) pResult.getEntity()).getMobType());
+
+        if (!(pResult.getEntity() instanceof LivingEntity)) {
+            return attackDamage;
+        }
+
+        attackDamage += EnchantmentHelper.getDamageBonus(this.weapon,((LivingEntity) pResult.getEntity()).getMobType());
         return attackDamage;
     }
 
@@ -96,7 +106,7 @@ public abstract class AbstractThrowableWeapon extends AbstractArrow {
     }
 
     protected void pickUp(Player pPlayer) {
-        if (!pPlayer.getBoundingBox().intersects(this.getBoundingBox())) {
+        if (!this.canPickUp()) {
             return;
         }
 
@@ -108,9 +118,9 @@ public abstract class AbstractThrowableWeapon extends AbstractArrow {
         }
     }
 
-    @Override
-    public void tick() {
-        super.tick();
+    public boolean canPickUp() {
+        return (Objects.requireNonNull(this.getOwner()).getBoundingBox().intersects(this.getBoundingBox()) &&
+        (this.tickCount > 20));
     }
 
     @Override
