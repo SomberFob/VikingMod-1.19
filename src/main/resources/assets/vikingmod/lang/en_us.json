@@ -15,6 +15,8 @@
   "block.vikingmod.black_slate_fence": "Black Slate Fence",
   "block.vikingmod.black_slate_wall": "Black Slate Wall",
   "block.vikingmod.leather_carpet": "Leather Carpet",
+  "block.vikingmod.leather_block": "Leather Block",
+  "block.vikingmod.leather_slab": "Leather Slab",
 
   "key.category.vikingmod.vikingmod": "Viking Mod",
   "key.vikingmod.battle_charge": "Battle Charge",
@@ -22,12 +24,10 @@
   "itemGroup.orestab": "Ores Tab",
   "itemGroup.barterandcraftingitems": "Barter And Crafting Items",
   "itemGroup.buildingblocks": "Building Blocks",
+  "itemGroup.decorative": "Decorative",
   "itemGroup.foodtab": "Food Tab",
   "itemGroup.toolstab": "Tools Tab",
-  "itemGroup.props": "Props",
   "itemGroup.armortab": "Amour Tab",
-  "itemGroup.miscellaneoustab": "Miscellaneous Tab",
-  "itemGroup.entitytab": "Entity Tab",
 
   "item.vikingmod.silver_helmet": "Silver Helmet",
   "item.vikingmod.silver_chestplate": "Silver Chestplate",
