@@ -26,19 +26,19 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab BUILDING_BLOCKS = new CreativeModeTab("buildingblocks") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.SLATE_BLOCK.get());
+            return new ItemStack(ModBlocks.BLACK_SLATE.get());
+        }
+    };
+    public static final CreativeModeTab DECORATIVE = new CreativeModeTab("decorative") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModBlocks.CRATE.get());
         }
     };
     public static final CreativeModeTab BARTER_AND_CRAFTING_ITEMS = new CreativeModeTab("barterandcraftingitems") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.SILVER_COINS.get());
-        }
-    };
-    public static final CreativeModeTab PROPS = new CreativeModeTab("props") {
-        @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.CRATE.get());
         }
     };
     public static final CreativeModeTab ARMOR_TAB = new CreativeModeTab("armortab") {

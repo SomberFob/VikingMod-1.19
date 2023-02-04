@@ -47,17 +47,31 @@ public class ModBlocks {
                     .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
 
 
-    public static final RegistryObject<Block> SLATE_BLOCK = registerBlock("slate_block",
+    public static final RegistryObject<Block> BLACK_SLATE = registerBlock("black_slate",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
 
-    public static final RegistryObject<Block> SLATE_STAIRS = registerBlock("slate_stairs",
-            () -> new StairBlock(() -> ModBlocks.SLATE_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()),
-            ModCreativeModeTab.BUILDING_BLOCKS);
-    public static final RegistryObject<Block> SLATE_SLAB = registerBlock("slate_slab",
+    public static final RegistryObject<Block> BLACK_SLATE_STAIRS = registerBlock("black_slate_stairs",
+            () -> new StairBlock(() -> ModBlocks.BLACK_SLATE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> BLACK_SLATE_SLAB = registerBlock("black_slate_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> BLACK_SLATE_FENCE = registerBlock("black_slate_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> BLACK_SLATE_WALL = registerBlock("black_slate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> LEATHER_CARPET = registerBlock("leather_carpet",
+            () -> new CarpetBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+
+
     public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
@@ -69,7 +83,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FISHING_TRAP = registerBlock("fishing_trap",
             () -> new FishingTrapBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .strength(2f).noOcclusion()), ModCreativeModeTab.PROPS);
+                    .strength(2f).noOcclusion()), ModCreativeModeTab.DECORATIVE);
 
 
 
@@ -79,7 +93,7 @@ public class ModBlocks {
                     .noOcclusion()),
             new Item.Properties()
                     .stacksTo(1)
-                    .tab(ModCreativeModeTab.PROPS));
+                    .tab(ModCreativeModeTab.DECORATIVE));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

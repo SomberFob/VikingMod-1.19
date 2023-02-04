@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "S": {
-      "item": "vikingmod:slate_block"
+      "item": "vikingmod:black_slate"
     }
   },
   "pattern": [
@@ -11,6 +11,6 @@
     "   "
   ],
   "result": {
-    "item": "vikingmod:slate_slab"
+    "item": "vikingmod:black_slate_slab"
   }
 }
