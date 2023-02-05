@@ -58,11 +58,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLACK_SLATE_SLAB = registerBlock("black_slate_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
-
     public static final RegistryObject<Block> BLACK_SLATE_FENCE = registerBlock("black_slate_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
-
     public static final RegistryObject<Block> BLACK_SLATE_WALL = registerBlock("black_slate_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
