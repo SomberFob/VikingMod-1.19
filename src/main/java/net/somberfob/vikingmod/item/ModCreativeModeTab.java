@@ -47,5 +47,11 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.SILVER_CHESTPLATE.get());
         }
     };
+    public static final CreativeModeTab PLANTS = new CreativeModeTab("plants") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModBlocks.NETTLE.get());
+        }
+    };
 
 }

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_taiga",
+  "features": "vikingmod:jasmine_nettle",
+  "step": "vegetal_decoration"
+}

@@ -2,6 +2,8 @@ package net.somberfob.vikingmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -46,6 +48,7 @@ public class VikingMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.NETTLE.getId(), ModBlocks.POTTED_NETTLE);
     }
 
 

@@ -1,6 +1,7 @@
 package net.somberfob.vikingmod.world.feature;
 
 import net.minecraft.core.Registry;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +20,13 @@ public class ModPlacedFeatures {
             () -> new PlacedFeature(ModConfiguredFeatures.SILVER_ORE.getHolder().get(),
                     commonOrePlacement(7, // VeinsPerChunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
+
+    public static final RegistryObject<PlacedFeature> NETTLE_PLACED = PLACED_FEATURES.register("nettle_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.NETTLE.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(16),
+                    InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
+
+
+
 
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());
