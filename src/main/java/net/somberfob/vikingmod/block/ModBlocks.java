@@ -12,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.somberfob.vikingmod.VikingMod;
+import net.somberfob.vikingmod.block.custom.BlackSlateSpireBlock;
 import net.somberfob.vikingmod.block.custom.CrateBlock;
 import net.somberfob.vikingmod.block.custom.FishingTrapBlock;
 import net.somberfob.vikingmod.item.ModCreativeModeTab;
@@ -50,11 +51,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLACK_SLATE = registerBlock("black_slate",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
-
     public static final RegistryObject<Block> BLACK_SLATE_STAIRS = registerBlock("black_slate_stairs",
             () -> new StairBlock(() -> ModBlocks.BLACK_SLATE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
-
     public static final RegistryObject<Block> BLACK_SLATE_SLAB = registerBlock("black_slate_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
@@ -68,14 +67,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> LEATHER_BLOCK = registerBlock("leather_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
-
     public static final RegistryObject<Block> LEATHER_SLAB = registerBlock("leather_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
-
     public static final RegistryObject<Block> LEATHER_CARPET = registerBlock("leather_carpet",
             () -> new CarpetBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> BLACK_SLATE_SPIRE = registerBlock("black_slate_spire",
+            () -> new BlackSlateSpireBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.BUILDING_BLOCKS);
 
 
     public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore",
@@ -90,6 +91,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> FISHING_TRAP = registerBlock("fishing_trap",
             () -> new FishingTrapBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(2f).noOcclusion()), ModCreativeModeTab.DECORATIVE);
+
 
 
 
