@@ -91,6 +91,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> VIKING_SHIELD = ITEMS.register("viking_shield",
             () -> new ShieldItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
+
+
+    public static final RegistryObject<Item> SAXON_SWORD = ITEMS.register("saxon_sword",
+            () -> new SwordItem(Tiers.IRON, 6, 3f,
+                    new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
+
     public static final RegistryObject<Item> SAXON_SHIELD = ITEMS.register("saxon_shield",
             () -> new ShieldItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
 

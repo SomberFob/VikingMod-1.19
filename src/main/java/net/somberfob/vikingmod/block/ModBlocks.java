@@ -102,14 +102,6 @@ public class ModBlocks {
                     .tab(ModCreativeModeTab.DECORATIVE));
 
 
-    public static final RegistryObject<Block> NETTLE = registerBlock("nettle",
-            () -> new FlowerBlock(MobEffects.GLOWING, 5,
-                    BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.PLANTS);
-
-    public static final RegistryObject<Block> POTTED_NETTLE = BLOCKS.register("potted_nettle",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.NETTLE,
-                    BlockBehaviour.Properties.copy(Blocks.DANDELION)));
-
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

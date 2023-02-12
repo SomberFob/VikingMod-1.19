@@ -48,7 +48,6 @@ public class VikingMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.NETTLE.getId(), ModBlocks.POTTED_NETTLE);
     }
 
 

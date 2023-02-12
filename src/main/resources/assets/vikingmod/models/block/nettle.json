@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "vikingmod:block/nettle"
-  },
-  "render_type": "cutout"
-}

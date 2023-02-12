@@ -29,10 +29,6 @@ public class ModConfiguredFeatures {
     public static final RegistryObject<ConfiguredFeature<?, ?>> SILVER_ORE = CONFIGURED_FEATURES.register("silver_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_SILVER_ORES.get(), 7)));
 
-    public static final RegistryObject<ConfiguredFeature<?, ?>> NETTLE = CONFIGURED_FEATURES.register("nettle",
-            () -> new ConfiguredFeature<>(Feature.FLOWER,
-                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.NETTLE.get()))))));
 
 
 

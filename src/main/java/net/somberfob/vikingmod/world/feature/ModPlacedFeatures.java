@@ -21,9 +21,7 @@ public class ModPlacedFeatures {
                     commonOrePlacement(7, // VeinsPerChunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
 
-    public static final RegistryObject<PlacedFeature> NETTLE_PLACED = PLACED_FEATURES.register("nettle_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.NETTLE.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(16),
-                    InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
+
 
 
 
