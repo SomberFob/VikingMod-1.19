@@ -73,8 +73,8 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.ARMOR_TAB)));
 
 
-    public static final RegistryObject<Item> SWORD = ITEMS.register("viking_sword",
-            () -> new SwordItem(Tiers.GOLD, 5, 4f,
+    public static final RegistryObject<Item> VIKING_SWORD = ITEMS.register("viking_sword",
+            () -> new SwordItem(Tiers.GOLD, 4, 4f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_SPEAR = ITEMS.register("viking_spear",
@@ -82,7 +82,7 @@ public class ModItems {
                                                                                                      new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_AXE = ITEMS.register("viking_axe",
-                                                                         () -> new VikingAxeItem(Tiers.GOLD, 6, 4f,
+                                                                         () -> new VikingAxeItem(Tiers.GOLD, 5, 4f,
                                                                                                  new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_HAMMER = ITEMS.register("viking_hammer",
@@ -95,6 +95,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> SAXON_SWORD = ITEMS.register("saxon_sword",
             () -> new SwordItem(Tiers.IRON, 6, 3f,
+                    new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
+
+    public static final RegistryObject<Item> SAXON_HOUSE_BANNER = ITEMS.register("saxon_house_banner",
+            () -> new SwordItem(Tiers.IRON, 8, 5f,
                     new Item.Properties().tab(ModCreativeModeTab.TOOLS_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> SAXON_SHIELD = ITEMS.register("saxon_shield",
