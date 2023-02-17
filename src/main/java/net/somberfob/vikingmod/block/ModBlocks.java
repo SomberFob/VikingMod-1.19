@@ -1,6 +1,7 @@
 package net.somberfob.vikingmod.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -92,9 +93,6 @@ public class ModBlocks {
             () -> new FishingTrapBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(2f).noOcclusion()), ModCreativeModeTab.DECORATIVE);
 
-
-
-
     public static final RegistryObject<Block> CRATE = registerBlock("crate",
             () -> new CrateBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(2f)
@@ -102,6 +100,7 @@ public class ModBlocks {
             new Item.Properties()
                     .stacksTo(1)
                     .tab(ModCreativeModeTab.DECORATIVE));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
