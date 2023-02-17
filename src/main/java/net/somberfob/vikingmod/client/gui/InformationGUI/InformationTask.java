@@ -29,11 +29,17 @@ public abstract class InformationTask {
         this.taskItem = taskItem;
     }
 
+    private void executeTask(TaskTypes taskType, Item itemResult) {
+        if (this.canNotStartTask(taskType)) {
+            return;
+        }
+        completeTask(itemResult);
+    }
+
     private boolean canNotStartTask(TaskTypes taskType) {
         if (taskCompleted) {
             return true;
         }
-
         else return this.taskType != taskType;
     }
 
@@ -46,11 +52,7 @@ public abstract class InformationTask {
 
     @SubscribeEvent
     public void onPickUp(PlayerEvent.ItemPickupEvent event) {
-        if (canNotStartTask(TaskTypes.PICKUP)) {
-            return;
-        };
-
-        this.completeTask(event.getStack().getItem());
+        executeTask(TaskTypes.PICKUP, event.getStack().getItem());
     }
 
     // Not implemented
@@ -77,7 +79,7 @@ public abstract class InformationTask {
     }
 
     @SubscribeEvent
-    public void GameOver(RenderGuiOverlayEvent event) {
+    public void onRender(RenderGuiOverlayEvent event) {
         this.openScreen();
     }
 

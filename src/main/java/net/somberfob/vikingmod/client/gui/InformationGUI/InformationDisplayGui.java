@@ -13,8 +13,10 @@ import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.FormattedCharSequence;
 import net.somberfob.vikingmod.VikingMod;
+import net.somberfob.vikingmod.sounds.ModSounds;
 import net.somberfob.vikingmod.util.RenderingHelper;
 import org.jetbrains.annotations.NotNull;
 
@@ -53,16 +55,6 @@ public class InformationDisplayGui extends Screen {
 
     private MutableComponent title;
 
-    public InformationDisplayGui() {
-        super(Component.literal("Information Display"));
-    }
-
-    public InformationDisplayGui(ResourceLocation backgroundIMG, MutableComponent title, MutableComponent description) {
-        super(Component.literal("Information Display"));
-        this.backgroundImg = backgroundIMG;
-        this.title = title;
-        this.description = description;
-    }
 
     public InformationDisplayGui(ResourceLocation backgroundIMG, MutableComponent title, MutableComponent description, int titleFontSize, int descriptionFontSize) {
         super(Component.literal("Information Display"));
@@ -71,6 +63,7 @@ public class InformationDisplayGui extends Screen {
         this.description = description;
         this.titleFontSize = titleFontSize;
         this.descriptionFontSize = descriptionFontSize;
+        Minecraft.getInstance().player.playSound(ModSounds.NOTIFY_OPEN.get());
     }
 
     @Override
@@ -78,6 +71,7 @@ public class InformationDisplayGui extends Screen {
         if (pMouseX >= this.buttonXPos && pMouseY >= this.buttonYPos && pMouseX <= buttonXPos + buttonWidth && pMouseY <= (buttonYPos + buttonHeight))
         {
             this.onClose();
+            Minecraft.getInstance().player.playSound(ModSounds.NOTIFY_CLOSE.get());
         };
 
         return super.mouseClicked(pMouseX, pMouseY, pButton);

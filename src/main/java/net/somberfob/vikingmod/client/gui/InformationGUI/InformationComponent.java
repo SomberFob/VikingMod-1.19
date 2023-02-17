@@ -8,6 +8,7 @@ import net.minecraftforge.client.event.RenderGuiOverlayEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.somberfob.vikingmod.VikingMod;
+import net.somberfob.vikingmod.sounds.ModSounds;
 
 public class InformationComponent extends InformationTask {
     private final ResourceLocation backgroundIMG;

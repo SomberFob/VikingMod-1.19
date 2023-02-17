@@ -27,17 +27,24 @@
     "subtitle": "Vikingmod:axe_throw",
     "sounds": [
       "vikingmod:axe_throw"
-    ],
-    "hammer_swing": {
-      "subtitle": "Vikingmod:hammer_swing",
-      "sounds": [
-        "vikingmod:hammer_swing"
-      ]
-    },
-    "null": {
-      "sounds": [
-        "vikingmod:null"
-      ]
-    }
+    ]
+  },
+  "hammer_swing": {
+    "subtitle": "Vikingmod:hammer_swing",
+    "sounds": [
+      "vikingmod:hammer_swing"
+    ]
+  },
+  "notify_open": {
+    "subtitle": "Vikingmod:notify_open",
+    "sounds": [
+      "vikingmod:notify_open"
+    ]
+  },
+  "notify_close": {
+    "subtitle": "Vikingmod:notify_close",
+    "sounds": [
+      "vikingmod:notify_close"
+    ]
   }
 }
