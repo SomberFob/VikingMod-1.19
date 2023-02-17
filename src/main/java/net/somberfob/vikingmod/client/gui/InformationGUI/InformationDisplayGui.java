@@ -34,7 +34,7 @@ public class InformationDisplayGui extends Screen {
     private static final int BACKGROUND_IMG_HEIGHT = 72;
     private static final int BACKGROUND_IMG_WIDTH = 88;
 
-    private final float scale = 1.5f;
+    private final float scale = 0.9f;
 
     MutableComponent description;
     private int descriptionFontSize = 6;
