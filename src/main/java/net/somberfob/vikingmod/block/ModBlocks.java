@@ -15,8 +15,8 @@ import net.somberfob.vikingmod.VikingMod;
 import net.somberfob.vikingmod.block.custom.BlackSlateSpireBlock;
 import net.somberfob.vikingmod.block.custom.CrateBlock;
 import net.somberfob.vikingmod.block.custom.FishingTrapBlock;
-import net.somberfob.vikingmod.item.ModCreativeModeTab;
-import net.somberfob.vikingmod.item.ModItems;
+import net.somberfob.vikingmod.world.feature.item.ModCreativeModeTab;
+import net.somberfob.vikingmod.world.feature.item.ModItems;
 
 import java.util.function.Supplier;
 
