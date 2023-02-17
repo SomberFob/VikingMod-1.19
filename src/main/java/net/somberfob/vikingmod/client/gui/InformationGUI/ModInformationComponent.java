@@ -16,7 +16,7 @@ public class ModInformationComponent {
         register(new InformationComponent(InformationTask.TaskTypes.SMELT, Items.COOKED_CHICKEN,
                                           "background1.png",
                                           Component.literal("Works"), Component.literal("Nice").withStyle(ChatFormatting.DARK_PURPLE),
-                                          20, 12));
+                                          10, 7));
 
         register(new InformationComponent(InformationTask.TaskTypes.CRAFT, Items.CRAFTING_TABLE,
                                           "background2.png",
