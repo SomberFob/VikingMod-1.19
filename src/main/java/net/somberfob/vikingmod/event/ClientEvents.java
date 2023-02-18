@@ -32,9 +32,6 @@ public class ClientEvents {
         public static void onKeyInput(InputEvent.Key event) {
             if (KeyBinding.SHOUTING_KEY.consumeClick()) {
                 //Minecraft.getInstance().player.playSound(SoundEvents.PILLAGER_CELEBRATE);
-                Minecraft.getInstance().setScreen(new InformationDisplayGui(new ResourceLocation(VikingMod.MOD_ID, "textures/gui/information_display/information_component/background1.png"), Component.literal("Works"),
-                                                                                                 Component.literal("Nice").withStyle(ChatFormatting.DARK_PURPLE),
-                                                                                                 12, 6));
             }
         }
 

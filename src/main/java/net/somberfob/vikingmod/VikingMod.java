@@ -17,7 +17,6 @@ import net.somberfob.vikingmod.block.entities.ModBlockEntities;
 import net.somberfob.vikingmod.client.gui.InformationGUI.InformationComponent;
 import net.somberfob.vikingmod.client.gui.InformationGUI.ModInformationComponent;
 import net.somberfob.vikingmod.entities.ModEntityType;
-import net.somberfob.vikingmod.event.custom.ItemTradedEvent;
 import net.somberfob.vikingmod.world.feature.item.ModItems;
 import net.somberfob.vikingmod.painting.ModPaintings;
 import net.somberfob.vikingmod.screen.ModMenuTypes;

@@ -38,10 +38,8 @@ public class InformationComponent extends InformationTask {
     @Override
     protected void openScreen() {
         if (this.taskCompleted && !displayShown) {
-            //Minecraft.getInstance().setScreen(new InformationDisplayGui(this.backgroundIMG, this.title, this.description, this.titleFontSize, this.descriptionFontSize));
-            // Testing
-            this.taskCompleted = false;
-            //this.displayShown = true;
+            Minecraft.getInstance().setScreen(new InformationDisplayGui(this.backgroundIMG, this.title, this.description, this.titleFontSize, this.descriptionFontSize));
+            this.displayShown = true;
         }
     }
 }

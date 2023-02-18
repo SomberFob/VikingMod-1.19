@@ -10,7 +10,6 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.network.NetworkDirection;
 import net.minecraftforge.network.NetworkHooks;
-import net.somberfob.vikingmod.event.custom.ItemTradedEvent;
 
 public abstract class InformationTask {
     protected boolean taskCompleted;
@@ -53,11 +52,6 @@ public abstract class InformationTask {
     @SubscribeEvent
     public void onPickUp(PlayerEvent.ItemPickupEvent event) {
         executeTask(TaskTypes.PICKUP, event.getStack().getItem());
-    }
-
-    // Not implemented
-    @SubscribeEvent
-    public void onTrade(ItemTradedEvent event) {
     }
 
     @SubscribeEvent
