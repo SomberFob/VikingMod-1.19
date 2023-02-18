@@ -1,8 +1,11 @@
 package net.somberfob.vikingmod.event;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraftforge.api.distmarker.Dist;
@@ -28,7 +31,10 @@ public class ClientEvents {
         @SubscribeEvent
         public static void onKeyInput(InputEvent.Key event) {
             if (KeyBinding.SHOUTING_KEY.consumeClick()) {
-                Minecraft.getInstance().player.playSound(SoundEvents.PILLAGER_CELEBRATE);
+                //Minecraft.getInstance().player.playSound(SoundEvents.PILLAGER_CELEBRATE);
+                Minecraft.getInstance().setScreen(new InformationDisplayGui(new ResourceLocation(VikingMod.MOD_ID, "textures/gui/information_display/information_component/background1.png"), Component.literal("Works"),
+                                                                                                 Component.literal("Nice").withStyle(ChatFormatting.DARK_PURPLE),
+                                                                                                 12, 6));
             }
         }
 

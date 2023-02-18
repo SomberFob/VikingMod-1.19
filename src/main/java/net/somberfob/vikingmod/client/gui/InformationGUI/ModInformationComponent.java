@@ -13,10 +13,10 @@ public class ModInformationComponent {
     }
 
     public static void register() {
-        register(new InformationComponent(InformationTask.TaskTypes.SMELT, Items.COOKED_CHICKEN,
+        register(new InformationComponent(InformationTask.TaskTypes.PICKUP, Items.COOKED_CHICKEN,
                                           "background1.png",
                                           Component.literal("Works"), Component.literal("Nice").withStyle(ChatFormatting.DARK_PURPLE),
-                                          10, 7));
+                                          8, 12));
 
         register(new InformationComponent(InformationTask.TaskTypes.CRAFT, Items.CRAFTING_TABLE,
                                           "background2.png",
