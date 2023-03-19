@@ -10,8 +10,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.somberfob.vikingmod.entities.ModEntityType;
-import net.somberfob.vikingmod.world.feature.item.ModItems;
 import net.somberfob.vikingmod.sounds.ModSounds;
+import net.somberfob.vikingmod.world.feature.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 public class ThrownVikingAxe extends AbstractThrowableWeapon {
