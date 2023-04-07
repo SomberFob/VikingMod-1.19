@@ -2,10 +2,8 @@ package net.somberfob.vikingmod.client.gui.InformationGUI;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.MinecraftForge;
-import net.somberfob.vikingmod.VikingMod;
 
 public class ModInformationComponent {
     public static void register(InformationComponent informationComponent) {;
@@ -13,13 +11,21 @@ public class ModInformationComponent {
     }
 
     public static void register() {
-        register(new InformationComponent(InformationTask.TaskTypes.SMELT, Items.COOKED_CHICKEN,
+        register(new InformationComponent(InformationTask.TaskTypes.PICKUP, Items.GRASS_BLOCK,
                                           "background1.png",
                                           Component.literal("Works"), Component.literal("Nice").withStyle(ChatFormatting.DARK_PURPLE),
-                                          10, 7));
+                                          8, 12));
+
+        register(new InformationComponent(InformationTask.TaskTypes.SMELT, Items.COOKED_CHICKEN,
+                                          "background2.png",
+                                          Component.literal("COOKED").withStyle(ChatFormatting.RED), Component.literal("Nice").withStyle(ChatFormatting.YELLOW)));
 
         register(new InformationComponent(InformationTask.TaskTypes.CRAFT, Items.CRAFTING_TABLE,
                                           "background2.png",
                                           Component.literal("Works").withStyle(ChatFormatting.RED), Component.literal("Nice").withStyle(ChatFormatting.YELLOW)));
+
+        register(new InformationComponent(InformationTask.TaskTypes.TRADE, Items.EMERALD,
+                                          "background2.png",
+                                          Component.literal("Trade").withStyle(ChatFormatting.RED), Component.literal("Nice").withStyle(ChatFormatting.YELLOW)));
     }
 }

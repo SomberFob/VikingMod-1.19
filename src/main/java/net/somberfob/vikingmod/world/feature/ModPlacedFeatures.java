@@ -1,7 +1,6 @@
 package net.somberfob.vikingmod.world.feature;
 
 import net.minecraft.core.Registry;
-import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
