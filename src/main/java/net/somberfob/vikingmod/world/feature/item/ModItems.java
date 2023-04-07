@@ -37,8 +37,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOOD_TAB).food(ModFoods.TROUT)));
     public static final RegistryObject<Item> ROCK_BASS = ITEMS.register("rock_bass",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOOD_TAB).food(ModFoods.ROCK_BASS)));
-    public static final RegistryObject<Item> RASPBERRYS = ITEMS.register("raspberrys",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOOD_TAB).food(ModFoods.RASPBERRYS)));
+
 
     public static final RegistryObject<Item> OIL_JAR = ITEMS.register("oil_jar",
             () -> new OilJarItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS)));

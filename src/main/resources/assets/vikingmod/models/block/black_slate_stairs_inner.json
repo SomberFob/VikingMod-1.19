@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "vikingmod:block/black_slate",
-    "top": "vikingmod:block/black_slate",
-    "side": "vikingmod:block/black_slate"
-  }
-}

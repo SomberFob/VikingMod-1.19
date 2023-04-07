@@ -1,25 +1,9 @@
 {
   "block.vikingmod.silver_block": "Block of Silver",
-  "block.vikingmod.stone_fancy_0": "Stone Fancy 0",
-  "block.vikingmod.stone_fancy_1": "Stone Fancy 1",
-  "block.vikingmod.stone_fancy_2": "Stone Fancy 2",
-  "block.vikingmod.stone_bricks_fancy_0": "Stone Bricks Fancy 0",
-  "block.vikingmod.stone_bricks_fancy_1": "Stone Bricks Fancy 1",
-  "block.vikingmod.black_slate": "Black Slate",
   "block.vikingmod.silver_ore": "Silver Ore",
   "block.vikingmod.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.vikingmod.fishing_trap": "Fishing Trap",
   "block.vikingmod.crate": "Crate",
-  "block.vikingmod.black_slate_spire": "Black Slate Spire",
-  "block.vikingmod.black_slate_slab": "Black Slate Slab",
-  "block.vikingmod.black_slate_stairs": "Black Slate Stairs",
-  "block.vikingmod.black_slate_fence": "Black Slate Fence",
-  "block.vikingmod.black_slate_wall": "Black Slate Wall",
-  "block.vikingmod.leather_carpet": "Leather Carpet",
-  "block.vikingmod.leather_block": "Leather Block",
-  "block.vikingmod.leather_slab": "Leather Slab",
-
-
 
   "key.category.vikingmod.vikingmod": "Viking Mod",
   "key.vikingmod.battle_charge": "Battle Charge",
@@ -38,7 +22,6 @@
   "item.vikingmod.silver_boots": "Silver Boots",
   "item.vikingmod.chicken_leg": "Chicken Leg",
   "item.vikingmod.trout": "Trout",
-  "item.vikingmod.raspberrys": "Raspberrys",
   "item.vikingmod.old_pillow": "Old Pillow",
   "item.vikingmod.rope": "Rope",
   "item.vikingmod.broche": "Broche",

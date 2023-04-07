@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "vikingmod:block/leather_block",
-    "top": "vikingmod:block/leather_block",
-    "side": "vikingmod:block/leather_block"
-  }
-}
