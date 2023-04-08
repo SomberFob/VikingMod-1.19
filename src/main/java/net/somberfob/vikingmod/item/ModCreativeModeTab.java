@@ -17,7 +17,7 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.TROUT.get());
         }
     };
-    public static final CreativeModeTab TOOLS_TAB = new CreativeModeTab("toolstab") {
+    public static final CreativeModeTab WEAPONS_TAB = new CreativeModeTab("weaponstab") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.SILVER_SWORD.get());
