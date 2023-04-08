@@ -1,4 +1,4 @@
-package net.somberfob.vikingmod.world.feature.item.custom.thrown;
+package net.somberfob.vikingmod.item.custom.thrown;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -9,7 +9,7 @@ import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.HitResult;
 import net.somberfob.vikingmod.entities.ModEntityType;
-import net.somberfob.vikingmod.world.feature.item.ModItems;
+import net.somberfob.vikingmod.item.ModItems;
 import org.jetbrains.annotations.NotNull;
 
 public class ThrownOilJar extends ThrowableItemProjectile {

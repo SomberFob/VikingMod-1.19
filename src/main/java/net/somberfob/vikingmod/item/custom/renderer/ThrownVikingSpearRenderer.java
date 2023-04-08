@@ -1,4 +1,4 @@
-package net.somberfob.vikingmod.world.feature.item.custom.renderer;
+package net.somberfob.vikingmod.item.custom.renderer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.somberfob.vikingmod.VikingMod;
-import net.somberfob.vikingmod.world.feature.item.custom.thrown.ThrownVikingSpear;
+import net.somberfob.vikingmod.item.custom.thrown.ThrownVikingSpear;
 import org.jetbrains.annotations.NotNull;
 
 public class ThrownVikingSpearRenderer extends EntityRenderer<ThrownVikingSpear> {

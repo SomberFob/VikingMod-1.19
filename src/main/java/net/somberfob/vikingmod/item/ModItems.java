@@ -1,4 +1,4 @@
-package net.somberfob.vikingmod.world.feature.item;
+package net.somberfob.vikingmod.item;
 
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -7,7 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.somberfob.vikingmod.VikingMod;
-import net.somberfob.vikingmod.world.feature.item.custom.*;
+import net.somberfob.vikingmod.item.custom.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =

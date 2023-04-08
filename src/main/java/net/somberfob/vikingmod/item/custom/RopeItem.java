@@ -1,4 +1,4 @@
-package net.somberfob.vikingmod.world.feature.item.custom;
+package net.somberfob.vikingmod.item.custom;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
@@ -14,8 +14,8 @@ import net.minecraft.world.level.Level;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class LuteItem extends Item {
-    public LuteItem(Properties properties) {
+public class RopeItem extends Item {
+    public RopeItem(Properties properties) {
         super(properties);
     }
 
@@ -28,7 +28,7 @@ public class LuteItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
         if(Screen.hasShiftDown()) {
-            components.add(Component.literal("An instrument with shiny strings. Maybe i can trade with this?").withStyle(ChatFormatting.GRAY));
+            components.add(Component.literal("Wow, Rope maybe I can trade with this?").withStyle(ChatFormatting.GRAY));
         } else {
             components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.YELLOW));
         }

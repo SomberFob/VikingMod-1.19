@@ -1,8 +1,8 @@
-package net.somberfob.vikingmod.world.feature.item.custom.model;
+package net.somberfob.vikingmod.item.custom.model;
 
 import net.minecraft.client.model.ColorableAgeableListModel;
 import net.minecraft.client.model.geom.ModelPart;
-import net.somberfob.vikingmod.world.feature.item.custom.thrown.ThrownVikingAxe;
+import net.somberfob.vikingmod.item.custom.thrown.ThrownVikingAxe;
 import org.jetbrains.annotations.NotNull;
 
 public class ThrownVikingAxeModel<T extends ThrownVikingAxe> extends ColorableAgeableListModel<T> {

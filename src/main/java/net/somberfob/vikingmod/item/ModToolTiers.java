@@ -1,4 +1,4 @@
-package net.somberfob.vikingmod.world.feature.item;
+package net.somberfob.vikingmod.item;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Tier;

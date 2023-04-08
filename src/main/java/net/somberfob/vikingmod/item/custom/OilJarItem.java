@@ -1,4 +1,4 @@
-package net.somberfob.vikingmod.world.feature.item.custom;
+package net.somberfob.vikingmod.item.custom;
 
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -8,7 +8,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SnowballItem;
 import net.minecraft.world.level.Level;
-import net.somberfob.vikingmod.world.feature.item.custom.thrown.ThrownOilJar;
+import net.somberfob.vikingmod.item.custom.thrown.ThrownOilJar;
 import org.jetbrains.annotations.NotNull;
 
 public class OilJarItem extends SnowballItem {

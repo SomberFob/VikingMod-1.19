@@ -1,7 +1,6 @@
 package net.somberfob.vikingmod.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -15,8 +14,8 @@ import net.minecraftforge.registries.RegistryObject;
 import net.somberfob.vikingmod.VikingMod;
 import net.somberfob.vikingmod.block.custom.CrateBlock;
 import net.somberfob.vikingmod.block.custom.FishingTrapBlock;
-import net.somberfob.vikingmod.world.feature.item.ModCreativeModeTab;
-import net.somberfob.vikingmod.world.feature.item.ModItems;
+import net.somberfob.vikingmod.item.ModCreativeModeTab;
+import net.somberfob.vikingmod.item.ModItems;
 
 import java.util.function.Supplier;
 

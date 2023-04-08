@@ -1,4 +1,4 @@
-package net.somberfob.vikingmod.world.feature.item.custom;
+package net.somberfob.vikingmod.item.custom;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -9,13 +9,11 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
-import net.somberfob.vikingmod.world.feature.item.custom.thrown.ThrownVikingAxe;
+import net.somberfob.vikingmod.item.custom.thrown.ThrownVikingSpear;
 import org.jetbrains.annotations.NotNull;
 
-
-public class VikingAxeItem extends SwordItem {
-
-    public VikingAxeItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+public class VikingSpearItem extends SwordItem {
+    public VikingSpearItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
 
@@ -34,12 +32,14 @@ public class VikingAxeItem extends SwordItem {
         }
 
         if (remainingTime >= 10 && !pLevel.isClientSide) {
-            ThrownVikingAxe thrownVikingAxe = new ThrownVikingAxe(player, pLevel, pStack);
-            thrownVikingAxe.shoot(player.getLookAngle().x, player.getLookAngle().y, player.getLookAngle().z, 1.0F, 1.0F);
+            ThrownVikingSpear thrownVikingAxe = new ThrownVikingSpear(player, pLevel, pStack);
+            //thrownVikingAxe.setItem(pStack);
+            thrownVikingAxe.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
             pLevel.addFreshEntity(thrownVikingAxe);
             player.getInventory().removeItem(pStack);
         }
     }
+
 
 
     @Override

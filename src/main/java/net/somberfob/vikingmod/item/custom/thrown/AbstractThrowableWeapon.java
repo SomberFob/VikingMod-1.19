@@ -1,4 +1,4 @@
-package net.somberfob.vikingmod.world.feature.item.custom.thrown;
+package net.somberfob.vikingmod.item.custom.thrown;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;

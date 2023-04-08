@@ -19,8 +19,8 @@ import net.somberfob.vikingmod.client.gui.HealthBarGui;
 import net.somberfob.vikingmod.client.gui.InformationGUI.InformationDisplayGui;
 import net.somberfob.vikingmod.entities.ModEntityType;
 import net.somberfob.vikingmod.util.KeyBinding;
-import net.somberfob.vikingmod.world.feature.item.custom.renderer.ThrownVikingAxeRenderer;
-import net.somberfob.vikingmod.world.feature.item.custom.renderer.ThrownVikingSpearRenderer;
+import net.somberfob.vikingmod.item.custom.renderer.ThrownVikingAxeRenderer;
+import net.somberfob.vikingmod.item.custom.renderer.ThrownVikingSpearRenderer;
 
 @Mod.EventBusSubscriber(modid = VikingMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEvents {

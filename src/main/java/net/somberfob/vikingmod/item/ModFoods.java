@@ -1,4 +1,4 @@
-package net.somberfob.vikingmod.world.feature.item;
+package net.somberfob.vikingmod.item;
 
 import net.minecraft.world.food.FoodProperties;
 

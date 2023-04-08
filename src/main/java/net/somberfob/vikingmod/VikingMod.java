@@ -20,7 +20,7 @@ import net.somberfob.vikingmod.screen.fishingtrap.FishingTrapScreen;
 import net.somberfob.vikingmod.sounds.ModSounds;
 import net.somberfob.vikingmod.world.feature.ModConfiguredFeatures;
 import net.somberfob.vikingmod.world.feature.ModPlacedFeatures;
-import net.somberfob.vikingmod.world.feature.item.ModItems;
+import net.somberfob.vikingmod.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file

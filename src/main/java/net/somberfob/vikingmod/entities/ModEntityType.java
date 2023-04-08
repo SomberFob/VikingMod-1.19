@@ -7,9 +7,9 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.somberfob.vikingmod.VikingMod;
-import net.somberfob.vikingmod.world.feature.item.custom.thrown.ThrownOilJar;
-import net.somberfob.vikingmod.world.feature.item.custom.thrown.ThrownVikingAxe;
-import net.somberfob.vikingmod.world.feature.item.custom.thrown.ThrownVikingSpear;
+import net.somberfob.vikingmod.item.custom.thrown.ThrownOilJar;
+import net.somberfob.vikingmod.item.custom.thrown.ThrownVikingAxe;
+import net.somberfob.vikingmod.item.custom.thrown.ThrownVikingSpear;
 
 public class ModEntityType {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
