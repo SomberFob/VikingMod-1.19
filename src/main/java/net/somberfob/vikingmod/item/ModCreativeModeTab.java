@@ -11,7 +11,7 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.SILVER.get());
         }
     };
-    public static final CreativeModeTab FOOD_TAB = new CreativeModeTab("foodtab") {
+    public static final CreativeModeTab FOODS_TAB = new CreativeModeTab("foodstab") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.TROUT.get());

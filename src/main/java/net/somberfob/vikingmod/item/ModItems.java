@@ -34,9 +34,11 @@ public class ModItems {
             () -> new LuteItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(1)));
 
     public static final RegistryObject<Item> TROUT = ITEMS.register("trout",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOOD_TAB).food(ModFoods.TROUT)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOODS_TAB).food(ModFoods.TROUT)));
     public static final RegistryObject<Item> ROCK_BASS = ITEMS.register("rock_bass",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOOD_TAB).food(ModFoods.ROCK_BASS)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOODS_TAB).food(ModFoods.ROCK_BASS)));
+    public static final RegistryObject<Item> RATIONS = ITEMS.register("rations",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FOODS_TAB).food(ModFoods.RATIONS)));
 
 
     public static final RegistryObject<Item> OIL_JAR = ITEMS.register("oil_jar",

@@ -12,7 +12,7 @@
   "itemGroup.barterandcraftingitems": "Barter And Crafting Items",
   "itemGroup.buildingblocks": "Building Blocks",
   "itemGroup.decorative": "Decorative",
-  "itemGroup.foodtab": "Food Tab",
+  "itemGroup.foodstab": "Foods Tab",
   "itemGroup.weaponstab": "Weapons Tab",
   "itemGroup.armortab": "Amour Tab",
 
@@ -22,6 +22,7 @@
   "item.vikingmod.silver_boots": "Silver Boots",
   "item.vikingmod.chicken_leg": "Chicken Leg",
   "item.vikingmod.trout": "Trout",
+  "item.vikingmod.rations": "Rations",
   "item.vikingmod.old_pillow": "Old Pillow",
   "item.vikingmod.rope": "Rope",
   "item.vikingmod.broche": "Broche",
