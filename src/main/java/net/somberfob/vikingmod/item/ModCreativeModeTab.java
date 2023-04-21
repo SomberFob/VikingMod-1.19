@@ -14,7 +14,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab FOODS_TAB = new CreativeModeTab("foodstab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.TROUT.get());
+            return new ItemStack(ModItems.GOLDEN_RASPBERRIES.get());
         }
     };
     public static final CreativeModeTab WEAPONS_TAB = new CreativeModeTab("weaponstab") {
