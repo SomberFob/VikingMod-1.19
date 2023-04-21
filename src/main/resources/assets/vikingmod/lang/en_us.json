@@ -8,13 +8,13 @@
   "key.category.vikingmod.vikingmod": "Viking Mod",
   "key.vikingmod.battle_charge": "Battle Charge",
 
-  "itemGroup.orestab": "Ores Tab",
+  "itemGroup.crafting_materials": "Crafting Materials",
   "itemGroup.barterandcraftingitems": "Barter And Crafting Items",
   "itemGroup.buildingblocks": "Building Blocks",
   "itemGroup.decorative": "Decorative",
-  "itemGroup.foodstab": "Foods Tab",
-  "itemGroup.weaponstab": "Weapons Tab",
-  "itemGroup.armortab": "Amour Tab",
+  "itemGroup.consumables": "Consumables",
+  "itemGroup.weapons": "Weapons",
+  "itemGroup.equipment": "Equipment",
 
   "item.vikingmod.golden_raspberries": "Golden Raspberries",
 
