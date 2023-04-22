@@ -99,6 +99,10 @@ public class ModItems {
             () -> new BannerWeapon(Tiers.IRON, 8, 5f,
                     new Item.Properties().tab(ModCreativeModeTab.WEAPONS).stacksTo(1)));
 
+    public static final RegistryObject<Item> VIKING_BANNER = ITEMS.register("viking_banner",
+            () -> new BannerWeapon(Tiers.IRON, 7, 5.5f,
+                    new Item.Properties().tab(ModCreativeModeTab.WEAPONS).stacksTo(1)));
+
     public static final RegistryObject<Item> SAXON_SHIELD = ITEMS.register("saxon_shield",
             () -> new ShieldItem(new Item.Properties().tab(ModCreativeModeTab.EQUIPMENT)));
 
