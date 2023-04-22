@@ -1,10 +1,10 @@
 {
   "display": {
     "icon": {
-      "item": "vikingmod:viking_axe"
+      "item": "vikingmod:saxon_banner"
     },
-    "title": "víkingr",
-    "description": "Use the weapon to slaughter Saxons!",
+    "title": "Saxon Life",
+    "description": "Show your true colors you are a Saxon",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
@@ -17,7 +17,7 @@
         "items": [
           {
             "items": [
-              "vikingmod:viking_axe"
+              "vikingmod:saxon_banner"
             ]
           }
         ]
