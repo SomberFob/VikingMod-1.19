@@ -1,0 +1,21 @@
+{
+  "key": {
+    "S": {
+      "item": "minecraft:gold_ingot"
+    },
+    "E": {
+      "item": "vikingmod:raspberries"
+    }
+  },
+
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SES",
+    "SSS"
+  ],
+
+  "result": {
+    "item": "vikingmod:golden_raspberries"
+  }
+}
