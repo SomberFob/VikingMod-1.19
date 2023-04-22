@@ -11,7 +11,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.somberfob.vikingmod.block.ModBlocks;
 import net.somberfob.vikingmod.block.entities.ModBlockEntities;
-import net.somberfob.vikingmod.client.gui.InformationGUI.ModInformationComponent;
 import net.somberfob.vikingmod.entities.ModEntityType;
 import net.somberfob.vikingmod.painting.ModPaintings;
 import net.somberfob.vikingmod.screen.ModMenuTypes;
@@ -40,7 +39,6 @@ public class VikingMod {
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
         ModPaintings.register(modEventBus);
-        ModInformationComponent.register();
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }
