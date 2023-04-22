@@ -5,19 +5,19 @@ import net.minecraft.world.item.ItemStack;
 import net.somberfob.vikingmod.block.ModBlocks;
 
 public class ModCreativeModeTab {
-    public static final CreativeModeTab ORES_TAB = new CreativeModeTab("orestab") {
+    public static final CreativeModeTab CRAFTING_MATERIALS = new CreativeModeTab("crafting_materials") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.SILVER.get());
         }
     };
-    public static final CreativeModeTab FOODS_TAB = new CreativeModeTab("foodstab") {
+    public static final CreativeModeTab CONSUMABLES = new CreativeModeTab("consumables") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.TROUT.get());
+            return new ItemStack(ModItems.GOLDEN_RASPBERRIES.get());
         }
     };
-    public static final CreativeModeTab WEAPONS_TAB = new CreativeModeTab("weaponstab") {
+    public static final CreativeModeTab WEAPONS = new CreativeModeTab("weapons") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.SILVER_SWORD.get());
@@ -36,7 +36,7 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.SILVER_COINS.get());
         }
     };
-    public static final CreativeModeTab ARMOR_TAB = new CreativeModeTab("armortab") {
+    public static final CreativeModeTab EQUIPMENT = new CreativeModeTab("equipment") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.SILVER_CHESTPLATE.get());

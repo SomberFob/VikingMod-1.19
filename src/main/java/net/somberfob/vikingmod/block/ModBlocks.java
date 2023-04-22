@@ -25,17 +25,17 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SILVER_BLOCK = registerBlock("silver_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.ORES_TAB);
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CRAFTING_MATERIALS);
 
 
     public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
-                    UniformInt.of(3, 7)), ModCreativeModeTab.ORES_TAB);
+                    UniformInt.of(3, 7)), ModCreativeModeTab.CRAFTING_MATERIALS);
     public static final RegistryObject<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
-                    UniformInt.of(3, 7)), ModCreativeModeTab.ORES_TAB);
+                    UniformInt.of(3, 7)), ModCreativeModeTab.CRAFTING_MATERIALS);
 
     public static final RegistryObject<Block> FISHING_TRAP = registerBlock("fishing_trap",
             () -> new FishingTrapBlock(BlockBehaviour.Properties.of(Material.WOOD)
