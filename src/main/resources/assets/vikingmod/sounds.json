@@ -46,5 +46,11 @@
     "sounds": [
       "vikingmod:notify_close"
     ]
+  },
+  "war_horn": {
+    "subtitle": "Vikingmod:war_horn",
+    "sounds": [
+      "vikingmod:war_horn"
+    ]
   }
 }

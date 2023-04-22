@@ -24,6 +24,8 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> NOTIFY_OPEN = registerSoundEvent("notify_open");
     public static final RegistryObject<SoundEvent> NOTIFY_CLOSE = registerSoundEvent("notify_close");
 
+    public static final RegistryObject<SoundEvent> WAR_HORN = registerSoundEvent("war_horn");
+
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(VikingMod.MOD_ID, name)));
     }
