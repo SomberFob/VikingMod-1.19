@@ -41,7 +41,6 @@ public class ModItems {
     public static final RegistryObject<Item> CHANTERELLES_MUSHROOM = ITEMS.register("chanterelles_mushroom",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CONSUMABLES).food(ModFoods.CHANTERELLES_MUSHROOM)));
 
-
     public static final RegistryObject<Item> OIL_JAR = ITEMS.register("oil_jar",
             () -> new OilJarItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(7)));
 
