@@ -10,6 +10,7 @@
     "announce_to_chat": true,
     "background": "vikingmod:textures/block/silver_block.png"
   },
+  "parent": "vikingmod:weapons/viking_axe",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
