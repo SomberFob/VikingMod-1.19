@@ -87,7 +87,7 @@ public class ModItems {
                                                                                                  new Item.Properties().tab(ModCreativeModeTab.WEAPONS).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_HAMMER = ITEMS.register("viking_hammer",
-            () -> new SwordItem(Tiers.GOLD, 7, 5f,
+            () -> new SwordItem(Tiers.IRON, 7, 5f,
                     new Item.Properties().tab(ModCreativeModeTab.WEAPONS).stacksTo(1)));
 
 
@@ -109,6 +109,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> SAXON_SHIELD = ITEMS.register("saxon_shield",
             () -> new ShieldItem(new Item.Properties().tab(ModCreativeModeTab.EQUIPMENT)));
+
+    public static final RegistryObject<Item> MAKESHIFT_AXE = ITEMS.register("makeshift_axe",
+            () -> new SwordItem(Tiers.WOOD, 1, 1.5f,
+                    new Item.Properties().tab(ModCreativeModeTab.WEAPONS).stacksTo(1)));
 
 
 

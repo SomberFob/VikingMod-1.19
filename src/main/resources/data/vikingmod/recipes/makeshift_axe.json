@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "vikingmod:silver"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " SX",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "vikingmod:makeshift_axe"
+  }
+}
