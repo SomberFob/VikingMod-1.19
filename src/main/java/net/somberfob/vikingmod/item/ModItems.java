@@ -13,7 +13,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, VikingMod.MOD_ID);
 
-    public static final RegistryObject<Item> TITANIUM = ITEMS.register("titanium",
+    public static final RegistryObject<Item> OPAL = ITEMS.register("opal",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CRAFTING_MATERIALS)));
 
     public static final RegistryObject<Item> SILVER = ITEMS.register("silver",
