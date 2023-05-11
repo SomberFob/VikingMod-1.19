@@ -17,6 +17,7 @@ import net.somberfob.vikingmod.screen.ModMenuTypes;
 import net.somberfob.vikingmod.screen.crate.CrateScreen;
 import net.somberfob.vikingmod.screen.fishingtrap.FishingTrapScreen;
 import net.somberfob.vikingmod.sounds.ModSounds;
+import net.somberfob.vikingmod.world.dimension.ModDimensions;
 import net.somberfob.vikingmod.world.feature.ModConfiguredFeatures;
 import net.somberfob.vikingmod.world.feature.ModPlacedFeatures;
 import net.somberfob.vikingmod.item.ModItems;
@@ -40,6 +41,7 @@ public class VikingMod {
         ModPlacedFeatures.register(modEventBus);
         ModPaintings.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
+        ModDimensions.register();
         MinecraftForge.EVENT_BUS.register(this);
     }
 

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:the_nether",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:ocean",
+      "lakes": false,
+      "features": true,
+      "layers": [
+        {
+          "block": "minecraft:bedrock",
+          "height": 10
+        },
+        {
+          "block": "minecraft:stone",
+          "height": 5
+        },
+        {
+          "block": "minecraft:water",
+          "height": 25
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}
