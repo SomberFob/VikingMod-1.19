@@ -19,9 +19,12 @@ import net.minecraftforge.fml.common.Mod;
 import net.somberfob.vikingmod.VikingMod;
 import net.somberfob.vikingmod.client.gui.HealthBarGui;
 import net.somberfob.vikingmod.entities.ModEntityType;
+import net.somberfob.vikingmod.entity.client.armor.SaxonHelmetRenderer;
+import net.somberfob.vikingmod.item.custom.SaxonHelmetItem;
 import net.somberfob.vikingmod.util.KeyBinding;
 import net.somberfob.vikingmod.item.custom.renderer.ThrownVikingAxeRenderer;
 import net.somberfob.vikingmod.item.custom.renderer.ThrownVikingSpearRenderer;
+import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 @Mod.EventBusSubscriber(modid = VikingMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEvents {
@@ -56,5 +59,9 @@ public class ClientEvents {
             event.registerEntityRenderer(ModEntityType.VIKING_SPEAR.get(), ThrownVikingSpearRenderer::new);
             event.registerEntityRenderer(ModEntityType.OIL_JAR.get(), ThrownItemRenderer::new);
         }
+    }
+    @SubscribeEvent
+    public static void registerArmorRenderers(final EntityRenderersEvent.AddLayers event) {
+        GeoArmorRenderer.registerArmorRenderer(SaxonHelmetItem.class, new SaxonHelmetRenderer());
     }
 }

@@ -47,6 +47,10 @@ public class ModItems {
     public static final RegistryObject<Item> OIL_JAR = ITEMS.register("oil_jar",
             () -> new OilJarItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(7)));
 
+    public static final RegistryObject<Item> SAXON_HELMET = ITEMS.register("saxon_helmet",
+            () -> new SaxonHelmetItem(ModArmorMaterials.SILVER, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.EQUIPMENT)));
+
     public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword",
             () -> new SwordItem(ModToolTiers.SILVER, 3, 3f,
                     new Item.Properties().tab(ModCreativeModeTab.WEAPONS)));
