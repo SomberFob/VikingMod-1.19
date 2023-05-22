@@ -21,6 +21,7 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_SILVER = ITEMS.register("raw_silver",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CRAFTING_MATERIALS)));
 
+
     public static final RegistryObject<Item> OLD_PILLOW = ITEMS.register("old_pillow",
             () -> new OldPillowItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(3)));
     public static final RegistryObject<Item> SILVER_COINS = ITEMS.register("silver_coins",
@@ -40,7 +41,6 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CONSUMABLES).food(ModFoods.GOLDEN_RASPBERRIES)));
     public static final RegistryObject<Item> RASPBERRIES = ITEMS.register("raspberries",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CONSUMABLES).food(ModFoods.RASPBERRIES)));
-
     public static final RegistryObject<Item> CHANTERELLES_MUSHROOM = ITEMS.register("chanterelles_mushroom",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CONSUMABLES).food(ModFoods.CHANTERELLES_MUSHROOM)));
 
@@ -50,6 +50,11 @@ public class ModItems {
     public static final RegistryObject<Item> SAXON_HELMET = ITEMS.register("saxon_helmet",
             () -> new SaxonHelmetItem(ModArmorMaterials.SILVER, EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModCreativeModeTab.EQUIPMENT)));
+
+    public static final RegistryObject<Item> RUNE_OF_FURY = ITEMS.register("rune_of_fury",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RUNES_AND_UPGRADES).stacksTo(1)));
+    public static final RegistryObject<Item> RUNE_OF_LIFELEECH = ITEMS.register("rune_of_lifeleech",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RUNES_AND_UPGRADES).stacksTo(1)));
 
     public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword",
             () -> new SwordItem(ModToolTiers.SILVER, 3, 3f,

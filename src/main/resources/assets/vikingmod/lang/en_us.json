@@ -16,10 +16,14 @@
   "itemGroup.consumables": "Consumables",
   "itemGroup.weapons": "Weapons",
   "itemGroup.equipment": "Equipment",
+  "itemGroup.runes_and_upgrades": "Runes And Upgrades",
 
   "item.vikingmod.golden_raspberries": "Golden Raspberries",
   "item.vikingmod.raspberries": "Raspberries",
   "item.vikingmod.chanterelles_mushroom": "Chanterelles Mushroom",
+
+  "item.vikingmod.rune_of_fury": "Rune Of Fury",
+  "item.vikingmod.rune_of_lifeleech": "Rune Of Lifeleech",
 
   "item.vikingmod.silver_helmet": "Silver Helmet",
   "item.vikingmod.silver_chestplate": "Silver Chestplate",

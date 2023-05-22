@@ -42,5 +42,11 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.SILVER_CHESTPLATE.get());
         }
     };
+    public static final CreativeModeTab RUNES_AND_UPGRADES = new CreativeModeTab("runes_and_upgrades") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.RUNE_OF_FURY.get());
+        }
+    };
 
 }
