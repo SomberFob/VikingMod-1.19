@@ -1,27 +1,22 @@
 {
   "key": {
-    "S": {
-      "item": "minecraft:stick"
-    },
     "P": {
+      "item": "minecraft:trapdoor"
+    },
+    "S": {
       "tag": "minecraft:planks"
     },
     "E": {
-      "item": "minecraft:ender_eye"
+      "item": "minecraft:shulker"
     },
-    "C": {
-      "item": "minecraft:ender_chest"
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "SPS",
+      "SES",
+      "SSS"
+    ],
+    "result": {
+      "item": "vikingmod:crate"
     }
-  },
-
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "SPS",
-    "PEP",
-    "SCS"
-  ],
-
-  "result": {
-    "item": "vikingmod:crate"
   }
 }

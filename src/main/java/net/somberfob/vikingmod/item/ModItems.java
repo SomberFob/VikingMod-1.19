@@ -53,6 +53,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> RUNE_OF_FURY = ITEMS.register("rune_of_fury",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RUNES_AND_UPGRADES).stacksTo(1)));
+    public static final RegistryObject<Item> MINOR_RUNE_OF_FURY = ITEMS.register("minor_rune_of_fury",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RUNES_AND_UPGRADES).stacksTo(1)));
+    public static final RegistryObject<Item> RUNE_OF_SCORCHING = ITEMS.register("rune_of_scorching",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RUNES_AND_UPGRADES).stacksTo(1)));
+    public static final RegistryObject<Item> RUNE_OF_SHIELDBREAKING = ITEMS.register("rune_of_shieldbreaking",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RUNES_AND_UPGRADES).stacksTo(1)));
     public static final RegistryObject<Item> RUNE_OF_LIFELEECH = ITEMS.register("rune_of_lifeleech",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.RUNES_AND_UPGRADES).stacksTo(1)));
 
