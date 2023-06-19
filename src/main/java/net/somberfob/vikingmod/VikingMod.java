@@ -12,6 +12,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.somberfob.vikingmod.block.ModBlocks;
 import net.somberfob.vikingmod.block.entities.ModBlockEntities;
 import net.somberfob.vikingmod.entities.ModEntityType;
+import net.somberfob.vikingmod.network.Messages;
 import net.somberfob.vikingmod.painting.ModPaintings;
 import net.somberfob.vikingmod.screen.ModMenuTypes;
 import net.somberfob.vikingmod.screen.crate.CrateScreen;
@@ -45,7 +46,9 @@ public class VikingMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            Messages.register();
+        });
     }
 
 

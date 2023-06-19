@@ -5,22 +5,30 @@ import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.*;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.somberfob.vikingmod.VikingMod;
 import net.somberfob.vikingmod.client.gui.HealthBarGui;
+import net.somberfob.vikingmod.client.gui.JoinGui;
 import net.somberfob.vikingmod.entities.ModEntityType;
 import net.somberfob.vikingmod.entity.client.armor.SaxonHelmetRenderer;
 import net.somberfob.vikingmod.item.custom.SaxonHelmetItem;
+import net.somberfob.vikingmod.network.Messages;
+import net.somberfob.vikingmod.network.packet.JoinGuiS2CPacket;
+import net.somberfob.vikingmod.network.packet.TeleportC2SPacket;
 import net.somberfob.vikingmod.util.KeyBinding;
 import net.somberfob.vikingmod.item.custom.renderer.ThrownVikingAxeRenderer;
 import net.somberfob.vikingmod.item.custom.renderer.ThrownVikingSpearRenderer;
@@ -33,7 +41,7 @@ public class ClientEvents {
         @SubscribeEvent
         public static void onKeyInput(InputEvent.Key event) {
             if (KeyBinding.SHOUTING_KEY.consumeClick()) {
-                //Minecraft.getInstance().player.playSound(SoundEvents.PILLAGER_CELEBRATE);
+                //Messages.sendToServer(new TeleportC2SPacket(Level.NETHER, 10000, 0, 128));
             }
         }
 
@@ -42,6 +50,15 @@ public class ClientEvents {
             HealthBarGui.render(event);
         }
 
+        @SubscribeEvent
+        public static void onPlayerJoin(PlayerEvent.PlayerLoggedInEvent event) {
+            Player player = event.getEntity();
+            CompoundTag playerData = event.getEntity().getPersistentData();
+
+            if (playerData.getBoolean("newPlayer")) return;
+            Messages.sendToPlayer(new JoinGuiS2CPacket(), (ServerPlayer) player);
+            playerData.putBoolean("newPlayer", true);
+        }
 }
 
 
@@ -62,6 +79,6 @@ public class ClientEvents {
     }
     @SubscribeEvent
     public static void registerArmorRenderers(final EntityRenderersEvent.AddLayers event) {
-        GeoArmorRenderer.registerArmorRenderer(SaxonHelmetItem.class, new SaxonHelmetRenderer());
+        //GeoArmorRenderer.registerArmorRenderer(SaxonHelmetItem.class, new SaxonHelmetRenderer());
     }
 }

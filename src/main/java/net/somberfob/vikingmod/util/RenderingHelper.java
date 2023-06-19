@@ -1,12 +1,16 @@
 package net.somberfob.vikingmod.util;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.math.Vector3f;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiComponent;
 import net.minecraft.client.gui.font.FontManager;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.entity.EntityRenderDispatcher;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.FormattedCharSequence;
+import net.minecraft.world.entity.LivingEntity;
 import org.apache.logging.log4j.core.pattern.TextRenderer;
 
 public class RenderingHelper {
@@ -24,6 +28,10 @@ public class RenderingHelper {
         poseStack.translate(-(xPos), -(yPos), 0);
         GuiComponent.drawString(poseStack, Minecraft.getInstance().font, text, xPos, yPos, defaultColor);
         poseStack.popPose();
+    }
+
+    public static void renderDefaultFont(PoseStack poseStack, Component text, int xPos, int yPos, int fontSize) {
+        renderDefaultFont(poseStack, text, xPos, yPos, fontSize, 1f);
     }
 
     public static void renderDefaultFont(PoseStack poseStack, Component text, int xPos, int yPos, int fontSize, float scale) {
@@ -61,6 +69,23 @@ public class RenderingHelper {
         int a = 255;
         int decimal = (a << 24) | (r << 16) | (g << 8) | b;
         return decimal;
+    }
+
+    public static void renderEntityToGui(LivingEntity entity, PoseStack poseStack, float scale, double x, double y) {
+        Minecraft minecraft = Minecraft.getInstance();
+        EntityRenderDispatcher entityRenderDispatcher = minecraft.getEntityRenderDispatcher();
+        MultiBufferSource.BufferSource multiBufferSource = minecraft.renderBuffers().bufferSource();
+
+        poseStack.pushPose();
+        poseStack.translate(x, y, 0);
+        poseStack.scale(scale, scale, scale);
+        poseStack.mulPose(Vector3f.ZP.rotation(3.15f));
+
+        entityRenderDispatcher.render(entity, 0.0D, 0.0D, 0.0D, 0.0F, 0.0F, poseStack, multiBufferSource, 15728880);
+        multiBufferSource.endBatch();
+        entityRenderDispatcher.setRenderShadow(true);
+
+        poseStack.popPose();
     }
 }
 
