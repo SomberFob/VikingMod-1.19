@@ -1,0 +1,21 @@
+{
+  "key": {
+    "S": {
+      "item": "minecraft:clay_ball"
+    },
+    "E": {
+      "item": "minecraft:tnt"
+    }
+  },
+
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SES",
+    "SSS"
+  ],
+
+  "result": {
+    "item": "vikingmod:oil_jar"
+  }
+}

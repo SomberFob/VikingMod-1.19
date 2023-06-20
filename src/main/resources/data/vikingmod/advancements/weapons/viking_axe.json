@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "vikingmod:viking_axe"
+    },
+    "title": "víkingr",
+    "description": "Now you're a Viking!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "vikingmod:textures/block/silver_block.png"
+  },
+  "parent": "vikingmod:weapons/makeshift_axe",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vikingmod:viking_axe"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

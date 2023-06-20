@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "vikingmod:makeshift_axe"
+    },
+    "title": "Baby Steps",
+    "description": "Your first weapon be careful",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "vikingmod:textures/block/silver_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vikingmod:makeshift_axe"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "tag": "minecraft:planks"
+    },
+    "O": {
+      "item": "vikingmod:silver"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "IWI",
+    "WOW",
+    "IWI"
+  ],
+  "result": {
+    "item": "vikingmod:viking_shield"
+  }
+}

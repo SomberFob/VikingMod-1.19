@@ -1,0 +1,56 @@
+{
+  "cave_drums": {
+    "subtitle": "Vikingmod:cave_drums",
+    "sounds": [
+      "vikingmod:cave_drums"
+    ]
+  },
+  "viking_charge": {
+    "subtitle": "Vikingmod:viking_charge",
+    "sounds": [
+      "vikingmod:viking_charge"
+    ]
+  },
+  "axe_pickup": {
+    "subtitle": "Vikingmod:axe_pickup",
+    "sounds": [
+      "vikingmod:axe_pickup"
+    ]
+  },
+  "axe_select": {
+    "subtitle": "Vikingmod:axe_select",
+    "sounds": [
+      "vikingmod:axe_select"
+    ]
+  },
+  "axe_throw": {
+    "subtitle": "Vikingmod:axe_throw",
+    "sounds": [
+      "vikingmod:axe_throw"
+    ]
+  },
+  "hammer_swing": {
+    "subtitle": "Vikingmod:hammer_swing",
+    "sounds": [
+      "vikingmod:hammer_swing"
+    ]
+  },
+  "notify_open": {
+    "subtitle": "Vikingmod:notify_open",
+    "sounds": [
+      "vikingmod:notify_open"
+    ]
+  },
+  "notify_close": {
+    "subtitle": "Vikingmod:notify_close",
+    "sounds": [
+      "vikingmod:notify_close"
+    ]
+  },
+  "war_horn": {
+    "subtitle": "Vikingmod:war_horn",
+    "sounds": [
+      "vikingmod:war_horn"
+    ]
+  }
+}

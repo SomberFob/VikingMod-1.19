@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "vikingmod:block/crate"
+    },
+    "facing=south": {
+      "model": "vikingmod:block/crate",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vikingmod:block/crate",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "vikingmod:block/crate",
+      "y": 90
+    }
+  }
+}
