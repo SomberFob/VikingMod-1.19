@@ -11,9 +11,12 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderDispatcher;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.FormattedText;
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.Style;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -22,6 +25,7 @@ import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.monster.ZombieVillager;
 import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.npc.VillagerType;
+import net.minecraft.world.inventory.tooltip.TooltipComponent;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.somberfob.vikingmod.VikingMod;
@@ -30,6 +34,10 @@ import net.somberfob.vikingmod.network.packet.TeleportC2SPacket;
 import net.somberfob.vikingmod.util.RenderingHelper;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class JoinGui extends Screen {
     private static final ResourceLocation TEXTURE = new ResourceLocation(VikingMod.MOD_ID, "textures/gui/joingui/joingui.png");
@@ -47,6 +55,9 @@ public class JoinGui extends Screen {
     private int slotX2;
     private int slotCircleCenterX2;
 
+    private List<Component> slot1Text = new ArrayList<>();
+    private List<Component> slot2Text = new ArrayList<>();
+
     protected JoinGui() {
         super(Component.literal("title"));
     }
@@ -62,6 +73,12 @@ public class JoinGui extends Screen {
         this.slotY = centerY + 48;
         this.slotX2 = centerX + 98;
         this.slotCircleCenterX2 = centerX + 133;
+
+        slot1Text.add(Component.literal("Line1").withStyle(ChatFormatting.BOLD));
+        slot1Text.add(Component.literal("Line2").withStyle(ChatFormatting.YELLOW));
+
+        slot2Text.add(Component.literal("Line1"));
+        slot2Text.add(Component.literal("Line2"));
     }
 
     @Override
@@ -95,10 +112,10 @@ public class JoinGui extends Screen {
 
         if (slotCollision(pMouseX, pMouseY, slotX1, slotY, slotCircleCenterX1, centerY)) {
             renderHoveredSlot(pPoseStack, centerX, centerY, 0);
-            this.renderTooltip(pPoseStack, Component.literal("test"), pMouseX, pMouseY);
+            this.renderTooltip(pPoseStack, slot1Text, java.util.Optional.empty(), pMouseX, pMouseY);
         } else if (slotCollision(pMouseX, pMouseY, slotX2, slotY, slotCircleCenterX2, centerY)) {
             renderHoveredSlot(pPoseStack, centerX + TEXTURE_WIDTH / 2, centerY, TEXTURE_WIDTH / 2);
-            this.renderTooltip(pPoseStack, Component.literal("second test").withStyle(ChatFormatting.YELLOW).withStyle(ChatFormatting.BOLD), pMouseX, pMouseY);
+            this.renderTooltip(pPoseStack, slot2Text, java.util.Optional.empty(), pMouseX, pMouseY);
         }
 
 

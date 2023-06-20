@@ -63,8 +63,6 @@ public class ClientEvents {
             playerData.putBoolean("newPlayer", true);
         }
 
-
-
     @Mod.EventBusSubscriber(modid = VikingMod.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModBusEvents {
         @SubscribeEvent
