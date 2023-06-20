@@ -1,5 +1,6 @@
 package net.somberfob.vikingmod.network.packet;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceKey;
@@ -22,8 +23,8 @@ public class JoinGuiS2CPacket {
     }
 
     public boolean handle(Supplier<NetworkEvent.Context> supplier) {
-            NetworkEvent.Context context = supplier.get();
-            context.enqueueWork(JoinGui::open);
+        NetworkEvent.Context context = supplier.get();
+        context.enqueueWork(JoinGui::open);
             return true;
     }
 }

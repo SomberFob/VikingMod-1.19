@@ -22,6 +22,7 @@ import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.monster.ZombieVillager;
 import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.npc.VillagerType;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.somberfob.vikingmod.VikingMod;
 import net.somberfob.vikingmod.network.Messages;
@@ -79,6 +80,11 @@ public class JoinGui extends Screen {
     }
 
     @Override
+    public boolean shouldCloseOnEsc() {
+        return false;
+    }
+
+    @Override
     public void render(@NotNull PoseStack pPoseStack, int pMouseX, int pMouseY, float pPartialTick) {
         super.render(pPoseStack, pMouseX, pMouseY, pPartialTick);
 
@@ -89,9 +95,12 @@ public class JoinGui extends Screen {
 
         if (slotCollision(pMouseX, pMouseY, slotX1, slotY, slotCircleCenterX1, centerY)) {
             renderHoveredSlot(pPoseStack, centerX, centerY, 0);
+            this.renderTooltip(pPoseStack, Component.literal("test"), pMouseX, pMouseY);
         } else if (slotCollision(pMouseX, pMouseY, slotX2, slotY, slotCircleCenterX2, centerY)) {
             renderHoveredSlot(pPoseStack, centerX + TEXTURE_WIDTH / 2, centerY, TEXTURE_WIDTH / 2);
+            this.renderTooltip(pPoseStack, Component.literal("second test").withStyle(ChatFormatting.YELLOW).withStyle(ChatFormatting.BOLD), pMouseX, pMouseY);
         }
+
 
         renderText(pPoseStack, centerX, centerY + 28);
 

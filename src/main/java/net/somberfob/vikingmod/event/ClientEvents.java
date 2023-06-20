@@ -5,6 +5,7 @@ import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -14,9 +15,11 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.SpawnData;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.*;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -41,7 +44,7 @@ public class ClientEvents {
         @SubscribeEvent
         public static void onKeyInput(InputEvent.Key event) {
             if (KeyBinding.SHOUTING_KEY.consumeClick()) {
-                //Messages.sendToServer(new TeleportC2SPacket(Level.NETHER, 10000, 0, 128));
+                JoinGui.open();
             }
         }
 
@@ -59,7 +62,6 @@ public class ClientEvents {
             Messages.sendToPlayer(new JoinGuiS2CPacket(), (ServerPlayer) player);
             playerData.putBoolean("newPlayer", true);
         }
-}
 
 
 
@@ -81,4 +83,5 @@ public class ClientEvents {
     public static void registerArmorRenderers(final EntityRenderersEvent.AddLayers event) {
         //GeoArmorRenderer.registerArmorRenderer(SaxonHelmetItem.class, new SaxonHelmetRenderer());
     }
+}
 }
