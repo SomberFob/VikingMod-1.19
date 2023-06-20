@@ -75,7 +75,7 @@ public class JoinGui extends Screen {
         this.slotCircleCenterX2 = centerX + 133;
 
         slot1Text.add(Component.literal("As Saxons, we defend our county with unwavering determination. Together, we rise against Viking invaders, reclaiming our lands.").withStyle(ChatFormatting.BOLD));
-        slot1Text.add(Component.literal("United, we'll drive them out, back to where they came. Our courage knows no bounds, our ancestors' spirit fuels us. Prepare, for victory is near!").withStyle(ChatFormatting.WHITE));
+        slot1Text.add(Component.literal("United, we'll drive them out, back to where they came. Our courage knows no bounds, our ancestors' spirit fuels us. Prepare, for victory is near.").withStyle(ChatFormatting.WHITE));
 
         slot2Text.add(Component.literal("Line1"));
         slot2Text.add(Component.literal("Line2"));
