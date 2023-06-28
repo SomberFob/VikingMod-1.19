@@ -74,11 +74,11 @@ public class JoinGui extends Screen {
         this.slotX2 = centerX + 98;
         this.slotCircleCenterX2 = centerX + 133;
 
-        slot1Text.add(Component.literal("As Saxons, we defend our county with unwavering determination. Together, we rise against Viking invaders, reclaiming our lands.").withStyle(ChatFormatting.BOLD));
-        slot1Text.add(Component.literal("United, we'll drive them out, back to where they came. Our courage knows no bounds, our ancestors' spirit fuels us. Prepare, for victory is near.").withStyle(ChatFormatting.WHITE));
+        slot1Text.add(Component.literal("As Saxons, we defend our country with unwavering determination. Together, we rise against Viking invaders, reclaiming our lands.").withStyle(ChatFormatting.WHITE));
+        slot1Text.add(Component.literal("United, we'll drive them out, back to where they came. Our courage knows no bounds; our ancestors' spirit fuels us. Prepare, for victory is near!").withStyle(ChatFormatting.WHITE));
 
-        slot2Text.add(Component.literal("Line1"));
-        slot2Text.add(Component.literal("Line2"));
+        slot2Text.add(Component.literal("As Vikings, we sail with fierce ambition. Our goal is to conquer new lands and forge our destiny. No country shall withstand our might").withStyle(ChatFormatting.WHITE));
+        slot2Text.add(Component.literal("Let them try to drive us out, but we will prevail. We are warriors bound by a legacy of strength. Prepare to witness the true power of the Viking horde. Victory is our destiny!").withStyle(ChatFormatting.WHITE));
     }
 
     @Override

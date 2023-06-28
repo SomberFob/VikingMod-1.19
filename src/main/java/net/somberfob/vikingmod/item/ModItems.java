@@ -21,7 +21,6 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_SILVER = ITEMS.register("raw_silver",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CRAFTING_MATERIALS)));
 
-
     public static final RegistryObject<Item> OLD_PILLOW = ITEMS.register("old_pillow",
             () -> new OldPillowItem(new Item.Properties().tab(ModCreativeModeTab.BARTER_AND_CRAFTING_ITEMS).stacksTo(3)));
     public static final RegistryObject<Item> SILVER_COINS = ITEMS.register("silver_coins",
@@ -119,6 +118,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> SAXON_BANNER = ITEMS.register("saxon_banner",
             () -> new BannerWeapon(Tiers.IRON, 8, 5f,
+                    new Item.Properties().tab(ModCreativeModeTab.WEAPONS).stacksTo(1)));
+
+    public static final RegistryObject<Item> ENGLISH_LONGSWORD = ITEMS.register("english_longsword",
+            () -> new SwordItem(Tiers.IRON, 8, 7f,
                     new Item.Properties().tab(ModCreativeModeTab.WEAPONS).stacksTo(1)));
 
     public static final RegistryObject<Item> VIKING_BANNER = ITEMS.register("viking_banner",
