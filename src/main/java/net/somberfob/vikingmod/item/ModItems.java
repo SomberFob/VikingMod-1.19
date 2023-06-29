@@ -125,6 +125,10 @@ public class ModItems {
             () -> new SwordItem(Tiers.IRON, 8, 7f,
                     new Item.Properties().tab(ModCreativeModeTab.WEAPONS).stacksTo(1)));
 
+    public static final RegistryObject<Item> BLACK_SWORD = ITEMS.register("black_sword",
+            () -> new SwordItem(Tiers.IRON, 8, 7f,
+                    new Item.Properties().tab(ModCreativeModeTab.WEAPONS).stacksTo(1)));
+
     public static final RegistryObject<Item> VIKING_BANNER = ITEMS.register("viking_banner",
             () -> new BannerWeapon(Tiers.IRON, 7, 5.5f,
                     new Item.Properties().tab(ModCreativeModeTab.WEAPONS).stacksTo(1)));
